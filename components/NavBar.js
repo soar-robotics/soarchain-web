@@ -12,8 +12,18 @@ const NavBar = () => {
           <a href="/">
             <Image src="/Logo.png" width={216} height={68} />
           </a>
+          <button
+            aria-controls="navbarCollapse"
+            className="navbar-toggler collapsed"
+            type="button"
+            aria-label="Toggle navigation"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-          <div className="navbar-collapse collapse">
+          <div id="navbarCollapse" className="navbar-collapse collapse">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a href="/" className="nav-link">
