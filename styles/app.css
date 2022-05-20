@@ -1,0 +1,16 @@
+.shapes1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px; /* Need a specific value to work */
+}
+
+#navbar {
+  padding: 1.5rem 0;
+}
+.nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
