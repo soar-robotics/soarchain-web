@@ -10,6 +10,8 @@ export default function Home() {
       </Head>
 
       <NavBar />
+      <img src="/waves.png" className="waves1" alt="" />
+      {/* <img src="/shapes.png" className="shapes1" alt="" /> */}
     </div>
   );
 }
