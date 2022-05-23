@@ -1,6 +1,4 @@
-import '../styles/globals.css';
-import '../styles/app.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/app.scss';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {

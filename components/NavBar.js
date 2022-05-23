@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const NavBar = () => {
   return (
-    <header className="sticky-top">
+    <header>
       <nav
         id="navbar"
         className="navbar-dark navbar navbar-expand-lg navbar-light"

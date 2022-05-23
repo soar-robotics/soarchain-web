@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import 'bootstrap-custom';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', 'Open Sans' !important;
+  background-image: url('/bg.png');
+  color: #fff !important;
+}
+
+a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+}
+.first-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-image: url('/waves.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// .waves1 {
+//   position: absolute;
+//   top: 0;
+//   max-width: 60%;
+//   left: 20%;
+//   right: 20%;
+//   min-height: 50vh;
+//   height: 80vh;
+// }
+// .shapes1 {
+//   position: absolute;
+//   top: -10%;
+//   left: 10%;
+// }
+header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+#navbar {
+  padding: 1.5rem 0;
+}
+
+.texts {
+  max-width: 630px;
+  overflow: hidden;
+}
+
+.nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.card-holder {
+  border-radius: 50px;
+  height: 400px;
+}
+
+.bg-card {
+  background-color: #0e001c;
+}
+
+/// TEXTS ///
+.text-purple {
+  color: #b2b0ff;
+  font-size: 18px;
+  font-size: 500;
+}
+.text-highlight {
+  font-size: 66.4px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.text-title {
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.card-p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #ae9fbb;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+///// SIZING
+.mw-900 {
+  max-width: 900px;
+}
+
+.mt-20 {
+  margin-top: 20%;
+}
+.mw-80 {
+  max-width: 80%;
+}
