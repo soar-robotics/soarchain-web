@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Open Sans' !important;
-  background-image: url('/bg.png');
+  background-image: url('/background/bg.png');
   color: #fff !important;
 }
 
@@ -21,7 +21,7 @@ a {
 
 .app {
   position: relative;
-  height: 100vh;
+  height: 5000px;
 }
 .first-shapes {
   position: absolute;
@@ -29,9 +29,9 @@ a {
   left: 0;
   right: 0;
   height: 100vh;
-  background-image: url('/waves.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('/background/waves.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 // .waves1 {
 //   position: absolute;
@@ -51,9 +51,14 @@ header {
   position: relative;
   z-index: 2;
   text-align: center;
-}
-#navbar {
-  padding: 1.5rem 0;
+  #navbar {
+    padding: 1.5rem 0;
+  }
+
+  .nav-link {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
 }
 
 .texts {
@@ -61,18 +66,51 @@ header {
   overflow: hidden;
 }
 
-.nav-link {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-}
-
 .card-holder {
   border-radius: 50px;
   height: 400px;
+
+  &.bg-card {
+    background-color: #0e001c;
+  }
 }
 
-.bg-card {
-  background-color: #0e001c;
+.rsu {
+  position: relative;
+
+  .row {
+    .col-md-3:not(:last-child) {
+      border-right: 3px solid #b1afff;
+    }
+  }
+
+  .img-hw {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 50%;
+  }
+  .img-corner {
+    top: -40px;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.slider {
+  height: 530px;
+
+  .picture {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 62%;
+  }
+  .content {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    width: 38%;
+  }
 }
 
 /// TEXTS ///
@@ -92,6 +130,11 @@ header {
   font-weight: 700;
 }
 
+.card-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .card-p {
   font-size: 15px;
   line-height: 25px;
@@ -99,11 +142,36 @@ header {
   color: #ae9fbb;
 }
 
-.card-title {
-  font-size: 25px;
-  font-weight: bold;
+.rsu-p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ae9fbb;
 }
 
+.rsu-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.rsu-highlight {
+  font-size: 70.3px;
+  line-height: 70.93px;
+  font-weight: 700;
+}
+
+.content-title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.content-p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 400;
+  overflow: auto;
+}
 ///// SIZING
 .mw-900 {
   max-width: 900px;
@@ -112,6 +180,29 @@ header {
 .mt-20 {
   margin-top: 20%;
 }
+.mt-30 {
+  margin-top: 30%;
+}
 .mw-80 {
   max-width: 80%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.dots {
+  width: 100px;
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+
+    &.active {
+      transform: scale(1.5);
+      color: #b2b0ff;
+    }
+  }
 }

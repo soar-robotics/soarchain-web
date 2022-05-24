@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import NavBar from '../components/NavBar';
-import Card from './components/Card';
+import Card from '../components/Card';
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="row mw-900 mx-auto">
+        <div className="row mw-900 mx-auto">
           <div className="col-md-4">
             <Card title={'Token'} iconPath="/token.png">
               KZM is an ERC20 token running on P-chain is hosted by the default
@@ -55,7 +55,77 @@ export default function Home() {
               KZM is used as a payment and staking mechanism for data requests.
             </Card>
           </div>
-        </section>
+        </div>
+
+        <div className="mt-30 rsu ">
+          <div className="rsu-highlight my-5 w-50 text-end">
+            What is <br /> Road Side Unit (RSU) ?
+          </div>
+
+          <div className="row text-center">
+            <div className="col-md-3">
+              <div className="rsu-title py-md-3">Hardware</div>
+              <div className="rsu-p">
+                RSU is custom hardware providing data storage, processing,
+                communication end charging
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="rsu-title py-md-3">Miner</div>
+              <div className="rsu-p">
+                RSU mines <br /> KoZMITO Coin.
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="rsu-title py-md-3">Host</div>
+              <div className="rsu-p">
+                RSU hosts the blockchain, which records data from each node in
+                the city.
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="rsu-title py-md-3">Placeable</div>
+              <div className="rsu-p">
+                Individuals and <br /> businesses can place RSUs on their
+                premises.
+              </div>
+            </div>
+          </div>
+
+          <img src="/hardware.png" className="img-hw" alt="" />
+          <img src="/shape.png" alt="" className="img-corner" />
+        </div>
+
+        <div className="mt-20 slider d-flex w-100">
+          <div className="picture h-100">
+            <img src="/app_dev.png" className=" w-100 h-100" alt="" />
+          </div>
+          <div className="content px-md-5 py-md-4 h-100 d-flex flex-column justify-content-between">
+            <div className="content-title">Application Developers</div>
+            <div className="content-p ">
+              RSUs stores very diverse and rich data about the vehicles, drones,
+              scooters, buildings, and in essence, any node in the smart city.{' '}
+              <br />
+              Developers will create applications and services to be used both
+              by the vehicles and the 3rd parties such as insurance companies,
+              micro lenders, DeFI platforms. <br /> Kozmito is the enabler for
+              data access, application development, and data collection.
+            </div>
+            <div className="d-flex justify-content-between">
+              <img src="prev_btn.png" className="cursor-pointer" alt="" />
+              <img src="next_btn.png" alt="" className="cursor-pointer" />
+            </div>
+          </div>
+        </div>
+
+        <div className=" mt-5 d-flex justify-content-center">
+          <div className="dots d-flex justify-content-between">
+            <div className="dot "></div>
+            <div className="dot active"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        </div>
       </div>
 
       {/* <img src="/waves.png" className="waves1" alt="" /> */}
