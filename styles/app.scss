@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 @import 'bootstrap-custom';
-
+@import '_spacings';
 html,
 body {
   padding: 0;
@@ -19,34 +19,14 @@ a {
   box-sizing: border-box;
 }
 
-.app {
-  position: relative;
-  height: 5000px;
-}
 .first-shapes {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  // background-image: url('/background/waves.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  width: 100%;
+  min-height: 70vh;
+  background-size: cover;
 }
-// .waves1 {
-//   position: absolute;
-//   top: 0;
-//   max-width: 60%;
-//   left: 20%;
-//   right: 20%;
-//   min-height: 50vh;
-//   height: 80vh;
-// }
-// .shapes1 {
-//   position: absolute;
-//   top: -10%;
-//   left: 10%;
-// }
+
 header {
   position: relative;
   z-index: 2;
@@ -89,6 +69,7 @@ header {
     right: 0;
     bottom: 50%;
     width: 50%;
+    min-width: 200px;
   }
   .img-corner {
     top: -40px;
@@ -164,6 +145,7 @@ header {
   line-height: 40px;
   color: #000;
   font-weight: 700;
+  overflow: auto;
 }
 .content-p {
   font-size: 16px;
@@ -172,9 +154,13 @@ header {
   font-weight: 400;
   overflow: auto;
 }
-///// SIZING
+//////////// SIZING ///////////
 .mw-900 {
   max-width: 900px;
+}
+
+.mw-80 {
+  max-width: 80%;
 }
 
 .mt-20 {
@@ -183,9 +169,7 @@ header {
 .mt-30 {
   margin-top: 30%;
 }
-.mw-80 {
-  max-width: 80%;
-}
+//////////--------------////////////
 
 .cursor-pointer {
   cursor: pointer;
@@ -202,7 +186,7 @@ header {
 
     &.active {
       transform: scale(1.5);
-      color: #b2b0ff;
+      background-color: #b2b0ff;
     }
   }
 }

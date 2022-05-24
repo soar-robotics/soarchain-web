@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import NavBar from '../components/NavBar';
 import Card from '../components/Card';
+import Spacing from '../components/Spacing';
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
       </Head>
 
       <NavBar />
-      <div className="first-shapes"></div>
-      <div className="container position-relative">
-        <div className="texts mx-auto position-relative mt-5">
+      <img src="/background/waves.png" className="first-shapes" alt="" />
+      <div className="container position-relative mt-md-4">
+        <div className="texts mx-auto position-relative">
           <div className="text-purple p text-center">
             Creating On-Chain Smart City Data Infrastructure
           </div>
@@ -29,7 +30,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="texts mx-auto position-relative mt-20">
+        <div className="texts mx-auto position-relative mt-10 pt-10">
           <div className="text-title text-center">About The KZM Coin:</div>
           <div className="p text-center mt-2 mb-4">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -57,7 +58,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-30 rsu ">
+        <div className="mt-30 py-15 rsu ">
           <div className="rsu-highlight my-5 w-50 text-end">
             What is <br /> Road Side Unit (RSU) ?
           </div>
@@ -96,7 +97,7 @@ export default function Home() {
           <img src="/shape.png" alt="" className="img-corner" />
         </div>
 
-        <div className="mt-20 slider d-flex w-100">
+        <div className="my-15 slider d-flex w-100">
           <div className="picture h-100">
             <img src="/app_dev.png" className=" w-100 h-100" alt="" />
           </div>
