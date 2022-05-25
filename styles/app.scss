@@ -97,6 +97,30 @@ header {
     width: 38%;
   }
 }
+.slider {
+  position: relative;
+  z-index: 13;
+}
+
+.use-cases {
+  position: relative;
+  z-index: 19;
+  .card-holder {
+    width: 60%;
+
+    .card {
+      height: 200px;
+      background-color: #000;
+      border-radius: 70px;
+    }
+  }
+  .usecase-text {
+    width: 40%;
+    font-size: 99px;
+    line-height: 87px;
+    font-weight: 700;
+  }
+}
 
 .rsu-app-bg {
   position: absolute;
@@ -125,15 +149,11 @@ header {
   margin-right: -50vw;
   background-image: url('/background/glow2.png');
   background-size: cover;
-  height: 230%;
+  height: 4000px;
   z-index: 10;
   background-repeat: no-repeat;
 }
 
-.slider {
-  position: relative;
-  z-index: 13;
-}
 /// TEXTS ///
 .text-purple {
   color: #b2b0ff;
@@ -217,6 +237,8 @@ header {
 
 .dots {
   width: 100px;
+  position: relative;
+  z-index: 20;
   .dot {
     width: 10px;
     height: 10px;

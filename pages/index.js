@@ -120,6 +120,16 @@ export default function Home() {
             <div className="dot"></div>
           </div>
         </div>
+
+        <div className="use-cases py-30 d-flex">
+          <div className="card-holder">
+            <div className="card mb-2"></div>
+            <div className="card mb-2"></div>
+            <div className="card mb-2"></div>
+          </div>
+
+          <div className="usecase-text px-md-5 h2">Sample Use Cases</div>
+        </div>
       </div>
 
       {/* <img src="/waves.png" className="waves1" alt="" /> */}
