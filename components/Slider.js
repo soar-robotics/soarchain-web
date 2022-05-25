@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slider = ({ bgImage }) => {
   return (
-    <div className="my-15 slider d-flex w-100">
+    <div className="slider d-flex w-100">
       <div
         className="picture h-100"
         style={{ backgroundImage: `url(${bgImage})` }}

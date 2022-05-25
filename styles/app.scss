@@ -15,6 +15,10 @@ a {
   color: #fff !important;
 }
 
+.app {
+  height: 4000px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -57,7 +61,7 @@ header {
 
 .rsu {
   position: relative;
-
+  z-index: 12;
   .row {
     .col-md-3:not(:last-child) {
       border-right: 3px solid #b1afff;
@@ -66,9 +70,9 @@ header {
 
   .img-hw {
     position: absolute;
-    right: 0;
-    bottom: 50%;
-    width: 50%;
+    right: -10%;
+    bottom: 20%;
+    width: 70%;
     min-width: 200px;
   }
   .img-corner {
@@ -94,6 +98,42 @@ header {
   }
 }
 
+.rsu-app-bg {
+  position: absolute;
+  width: 99.5vw !important;
+  max-width: 100vw !important;
+  top: -30%;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: url('/background/rsu-app.png');
+  background-size: cover;
+  height: 170%;
+  z-index: 11;
+  background-repeat: no-repeat;
+}
+
+.rsu-app-bg-2 {
+  position: absolute;
+  width: 99vw !important;
+  max-width: 100vw !important;
+  top: -35%;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: url('/background/glow2.png');
+  background-size: cover;
+  height: 230%;
+  z-index: 10;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  position: relative;
+  z-index: 13;
+}
 /// TEXTS ///
 .text-purple {
   color: #b2b0ff;

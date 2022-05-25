@@ -7,11 +7,11 @@ import Form from '../components/Form';
 import Slider from '../components/Slider';
 
 export default function Home() {
-  const [isAuth, setIsAuth] = useState(false);
+  // const [isAuth, setIsAuth] = useState(false);
 
-  if (!isAuth) {
-    return <Form setIsAuth={setIsAuth} />;
-  }
+  // if (!isAuth) {
+  //   return <Form setIsAuth={setIsAuth} />;
+  // }
   return (
     <div className="app">
       <Head>
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="texts mx-auto position-relative mt-10 pt-10">
+        <div className="texts mx-auto position-relative mt-15 pt-10 mb-3">
           <div className="text-title text-center">About The KZM Coin:</div>
           <div className="p text-center mt-2 mb-4">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="row mw-900 mx-auto">
+        <div className="row mw-900 mx-auto position-relative">
           <div className="col-md-4">
             <Card title={'Token'} iconPath="/token.png">
               KZM is an ERC20 token running on P-chain is hosted by the default
@@ -66,46 +66,52 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-30 py-15 rsu ">
-          <div className="rsu-highlight my-5 w-50 text-end">
-            What is <br /> Road Side Unit (RSU) ?
+        <div className="rsu-app position-relative">
+          <div className="mt-30 py-30 rsu ">
+            <div className="rsu-highlight pb-10 w-50 text-end">
+              What is <br /> Road Side Unit (RSU) ?
+            </div>
+
+            <div className="row text-center">
+              <div className="col-md-3">
+                <div className="rsu-title py-md-3">Hardware</div>
+                <div className="rsu-p">
+                  RSU is custom hardware providing data storage, processing,
+                  communication end charging
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="rsu-title py-md-3">Miner</div>
+                <div className="rsu-p">
+                  RSU mines <br /> KoZMITO Coin.
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="rsu-title py-md-3">Host</div>
+                <div className="rsu-p">
+                  RSU hosts the blockchain, which records data from each node in
+                  the city.
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="rsu-title py-md-3">Placeable</div>
+                <div className="rsu-p">
+                  Individuals and <br /> businesses can place RSUs on their
+                  premises.
+                </div>
+              </div>
+            </div>
+
+            <img src="/hardware-1.png" className="img-hw" alt="" />
+            <img src="/shape.png" alt="" className="img-corner" />
           </div>
 
-          <div className="row text-center">
-            <div className="col-md-3">
-              <div className="rsu-title py-md-3">Hardware</div>
-              <div className="rsu-p">
-                RSU is custom hardware providing data storage, processing,
-                communication end charging
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="rsu-title py-md-3">Miner</div>
-              <div className="rsu-p">
-                RSU mines <br /> KoZMITO Coin.
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="rsu-title py-md-3">Host</div>
-              <div className="rsu-p">
-                RSU hosts the blockchain, which records data from each node in
-                the city.
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="rsu-title py-md-3">Placeable</div>
-              <div className="rsu-p">
-                Individuals and <br /> businesses can place RSUs on their
-                premises.
-              </div>
-            </div>
-          </div>
+          <Slider bgImage={'/app_dev.png'} />
 
-          <img src="/hardware.png" className="img-hw" alt="" />
-          <img src="/shape.png" alt="" className="img-corner" />
+          <div className="rsu-app-bg"></div>
+          <div className="rsu-app-bg-2"></div>
         </div>
 
-        <Slider bgImage={'/app_dev.png'} />
         <div className=" mt-5 d-flex justify-content-center">
           <div className="dots d-flex justify-content-between">
             <div className="dot "></div>
