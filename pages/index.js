@@ -2,8 +2,15 @@ import Head from 'next/head';
 import NavBar from '../components/NavBar';
 import Card from '../components/Card';
 import Spacing from '../components/Spacing';
+import { useState } from 'react';
+import Form from '../components/Form';
 
 export default function Home() {
+  const [isAuth, setIsAuth] = useState(false);
+
+  if (!isAuth) {
+    return <Form setIsAuth={setIsAuth} />;
+  }
   return (
     <div className="app">
       <Head>
