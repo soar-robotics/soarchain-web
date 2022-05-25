@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="row mw-900 mx-auto position-relative">
+        <div className="row mw-900 mx-auto position-relative cards">
           <div className="col-md-4">
             <Card title={'Token'} iconPath="/token.png">
               KZM is an ERC20 token running on P-chain is hosted by the default
@@ -68,8 +68,19 @@ export default function Home() {
 
         <div className="rsu-app position-relative">
           <div className="mt-30 py-30 rsu ">
-            <div className="rsu-highlight pb-10 w-50 text-end">
-              What is <br /> Road Side Unit (RSU) ?
+            <div className="row">
+              <div className="col-md-6">
+                <div className="rsu-highlight pb-10 text-end">
+                  What is <br /> Road Side Unit (RSU) ?
+                </div>
+              </div>
+              <div className="col-md-6">
+                <img
+                  src="/hardware-1.png"
+                  className="img-fluid img-hw"
+                  alt=""
+                />
+              </div>
             </div>
 
             <div className="row text-center">
@@ -102,7 +113,6 @@ export default function Home() {
               </div>
             </div>
 
-            <img src="/hardware-1.png" className="img-hw" alt="" />
             <img src="/shape.png" alt="" className="img-corner" />
           </div>
 
@@ -121,14 +131,63 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="use-cases py-30 d-flex">
-          <div className="card-holder">
-            <div className="card mb-2"></div>
-            <div className="card mb-2"></div>
-            <div className="card mb-2"></div>
+        <div className="use-cases py-30 row">
+          <div className="card-holder col-md-8">
+            <div className="card mb-2 justify-content-center align-items-center">
+              <div className="w-75">
+                <div className="mw-80 py-3 ms-auto">
+                  <div className="rsu-title mb-2 ">dApp Store</div>
+                  <div className="card-p ">
+                    Application Developers use RSU cloud as smart city dApp
+                    store to develop, test, and sell their applications.
+                    Developers stake Kozmito to publish their applications.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="shape-3d"
+                style={{ backgroundImage: `url('/cube.png')` }}
+              ></div>
+            </div>
+            <div className="card mb-2 justify-content-center align-items-center">
+              <div className="w-75">
+                <div className="mw-80 py-3 me-auto">
+                  <div className="rsu-title mb-2 ">Routes Optimization</div>
+                  <div className="card-p ">
+                    Reducing total electric consumption of a smart city by
+                    optimizing the routes of all electrical vehicles. Savers are
+                    awarded with Kozmito.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="shape-3d right"
+                style={{ backgroundImage: `url('/cone.png')` }}
+              ></div>
+            </div>
+            <div className="card mb-2 justify-content-center align-items-center">
+              <div className="w-75">
+                <div className="mw-80 py-3 ms-auto">
+                  <div className="rsu-title mb-2 ">Insurance</div>
+                  <div className="card-p ">
+                    Insurance companies provide instant insurance to drivers
+                    based on driver data, vehicle data, road information, trip
+                    duration.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="shape-3d"
+                style={{ backgroundImage: `url('/cylinder.png')` }}
+              ></div>
+            </div>
           </div>
 
-          <div className="usecase-text px-md-5 h2">Sample Use Cases</div>
+          <div className="usecase-text px-md-5 col-md-4 h2">
+            Sample Use Cases
+          </div>
         </div>
       </div>
 
