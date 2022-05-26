@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className='rsu-app position-relative'>
+        <div className='rsu-app position-relative'>
           <div className='mt-30 py-30 rsu '>
             <div className='row'>
               <div className='col-md-6'>
@@ -120,7 +120,7 @@ export default function Home() {
 
           <div className='rsu-app-bg'></div>
           <div className='rsu-app-bg-2'></div>
-        </div> */}
+        </div>
 
         <div className=' mt-5 d-flex justify-content-center'>
           <div className='dots d-flex justify-content-between'>
