@@ -5,6 +5,7 @@ import Spacing from '../components/Spacing';
 import { useState } from 'react';
 import Form from '../components/Form';
 import Slider from '../components/Slider';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const [isAuth, setIsAuth] = useState(false);
@@ -226,6 +227,56 @@ export default function Home() {
             alt=""
           />
         </div>
+
+        <div className="developers py-30">
+          <div className="row">
+            <div className="col-md-6">
+              <img src="/devpic.png" className="img-fluid" alt="" />
+            </div>
+            <div className="col-md-6">
+              <div className="text-title">Developers</div>
+              <ul className="ul-line">
+                <li>
+                  <span className="indicator"></span>
+                  <div className="circle"></div>
+                  <span className="card-p">
+                    Access to on-chain, secure, multidimensional rich and
+                    diverse data set to develop and test applications.
+                  </span>
+                </li>
+                <li>
+                  <span className="indicator"></span>
+                  <div className="circle"></div>
+                  <span className="card-p">
+                    Develop applications that vehicles and other nodes can
+                    download from RSU cloud.{' '}
+                  </span>
+                </li>
+
+                <li>
+                  <span className="indicator"></span>
+                  <div className="circle"></div>
+                  <span className="card-p">
+                    Leverage processing capabilities of RSU cloud to
+                    automatically test your application and to tailor the
+                    feature set for the targeted node.
+                  </span>
+                </li>
+                <li>
+                  <span className="indicator"></span>
+                  <div className="circle"></div>
+                  <span className="card-p">
+                    Earn Kozmito coin with each download of your application by
+                    any node (vehicles, drones, scooters, buildings, ...) in the
+                    smart city.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <Footer />
       </div>
 
       {/* <img src="/waves.png" className="waves1" alt="" /> */}

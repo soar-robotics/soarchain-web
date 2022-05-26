@@ -8,16 +8,11 @@ body {
   font-family: 'Poppins', 'Open Sans' !important;
   background-image: url('/background/bg.png');
   color: #fff !important;
-
 }
 
 a {
   text-decoration: none;
   color: #fff !important;
-}
-
-.app {
-  height: 4000px;
 }
 
 * {
@@ -163,6 +158,99 @@ header {
   }
 }
 
+.developers {
+  position: relative;
+
+  .row {
+    position: relative;
+  }
+  img {
+    position: absolute;
+    top: -150px;
+    max-width: 500px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .text-title {
+    margin-left: -15px;
+  }
+  .ul-line {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: 100%;
+      width: 4px;
+      background: #b1afff;
+    }
+
+    li {
+      position: relative;
+      padding: 50px 0;
+      display: flex;
+      align-items: center;
+
+      .indicator {
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 4px;
+        background-color: #b1afff;
+      }
+
+      .circle {
+        position: absolute;
+        left: 30px;
+        height: 10px;
+        width: 10px;
+        background-color: #b1afff;
+        border-radius: 50%;
+      }
+
+      .card-p {
+        padding-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+      }
+
+      // &:before {
+      //   content: '';
+      //   position: absolute;
+      //   left: 0;
+      //   width: 30px;
+      //   height: 4px;
+      //   background-color: #b1afff;
+      // }
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   left: 30px;
+      //   width: 10px;
+      //   height: 10px;
+      //   border-radius: 50%;
+      //   background-color: #b1afff;
+      // }
+    }
+
+    .card-p {
+      position: absolute;
+      height: 100%;
+      left: 10%;
+      padding: 0;
+      top: 0;
+    }
+  }
+}
+
 .shape-3d {
   position: absolute;
   left: -7%;
@@ -270,7 +358,6 @@ header {
   font-size: 70.3px;
   line-height: 70.93px;
   font-weight: 700;
-  
 }
 
 .content-title {
