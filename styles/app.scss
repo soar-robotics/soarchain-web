@@ -8,6 +8,7 @@ body {
   font-family: 'Poppins', 'Open Sans' !important;
   background-image: url('/background/bg.png');
   color: #fff !important;
+
 }
 
 a {
@@ -176,6 +177,9 @@ header {
     top: 35%;
     left: auto;
   }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .rsu-app-bg {
@@ -220,11 +224,17 @@ header {
   font-size: 66.4px;
   line-height: 60px;
   font-weight: 700;
+  @include media-breakpoint-down(md) {
+    font-size: 35px;
+  }
 }
 
 .text-title {
   font-size: 43px;
   font-weight: 700;
+  @include media-breakpoint-down(md) {
+    font-size: 35px;
+  }
 }
 
 .card-title {
@@ -237,6 +247,9 @@ header {
   line-height: 25px;
   font-weight: 500;
   color: #ae9fbb;
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+  }
 }
 
 .rsu-p {
@@ -249,11 +262,15 @@ header {
 .rsu-title {
   font-size: 26px;
   font-weight: 700;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
 }
 .rsu-highlight {
   font-size: 70.3px;
   line-height: 70.93px;
   font-weight: 700;
+  
 }
 
 .content-title {
