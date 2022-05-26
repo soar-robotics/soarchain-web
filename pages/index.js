@@ -113,7 +113,7 @@ export default function Home() {
               </div>
             </div>
 
-            <img src="/shape.png" alt="" className="img-corner" />
+            <img src="/corners/top-left.png" alt="" className="img-corner" />
           </div>
 
           <Slider bgImage={'/app_dev.png'} />
@@ -188,6 +188,43 @@ export default function Home() {
           <div className="usecase-text px-md-5 col-md-4 h2">
             Sample Use Cases
           </div>
+        </div>
+
+        <div className="currency p-md-5 position-relative">
+          <div className="text-title text-center ">
+            KoZMITO Currency of Smart City Data Infrastructure
+          </div>
+
+          <div className="row">
+            <div className="col-md-4 text-center">
+              <div className="ellips mx-auto my-md-4">1</div>
+              <div className="rsu-title mb-2">Limitation</div>
+              <div className="rsu-p">Kozmito is limited in supply.</div>
+            </div>
+            <div className="col-md-4 text-center">
+              <div className="ellips mx-auto my-md-4">2</div>
+              <div className="rsu-title mb-2">Increasing</div>
+              <div className="rsu-p">
+                Kozmito’s value increases with increasing amount collected data.
+              </div>
+            </div>
+            <div className="col-md-4 text-center">
+              <div className="ellips mx-auto my-md-4">3</div>
+              <div className="rsu-title mb-2">True Enabler</div>
+              <div className="rsu-p">
+                Kozmito is true enabler for secure, safe, and green operation of
+                smart cities.
+              </div>
+            </div>
+          </div>
+
+          <img src="/corners/top-left.png" className="top-left" alt="" />
+          <img src="/corners/top-right.png" className="top-right" alt="" />
+          <img
+            src="/corners/bottom-right.png"
+            className="bottom-right"
+            alt=""
+          />
         </div>
       </div>
 

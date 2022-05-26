@@ -124,6 +124,41 @@ header {
     font-size: 99px;
     line-height: 87px;
     font-weight: 700;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 50px;
+    }
+  }
+}
+
+.currency {
+  z-index: 21;
+
+  .top-left {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .top-right {
+    position: absolute;
+    top: -50px;
+    right: -30px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: -50px;
+    right: -30px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 }
 
@@ -161,7 +196,7 @@ header {
 
 .rsu-app-bg-2 {
   position: absolute;
-  width: 99vw !important;
+  width: 99.5vw !important;
   max-width: 100vw !important;
   top: -35%;
   left: 50%;
@@ -235,6 +270,7 @@ header {
   font-weight: 400;
   overflow: auto;
 }
+
 //////////// SIZING ///////////
 .mw-900 {
   max-width: 900px;
@@ -272,4 +308,17 @@ header {
       background-color: #b2b0ff;
     }
   }
+}
+
+.ellips {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #ae9fbb;
 }
