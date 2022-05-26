@@ -7,11 +7,11 @@ import Form from '../components/Form';
 import Slider from '../components/Slider';
 
 export default function Home() {
-  const [isAuth, setIsAuth] = useState(false);
+  //const [isAuth, setIsAuth] = useState(false);
 
-   if (!isAuth) {
-     return <Form setIsAuth={setIsAuth} />;
-   }
+   //if (!isAuth) {
+    // return <Form setIsAuth={setIsAuth} />;
+   //}
   return (
     <div className="app">
       <Head>
