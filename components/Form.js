@@ -15,7 +15,7 @@ const Form = ({ setIsAuth }) => {
           placeholder="Password"
           onChange={(e) => setPw(e.target.value)}
         />
-        <button type="button" class="btn btn-success " onClick={onSubmit}>
+        <button type="button" className="btn btn-success " onClick={onSubmit}>
           Submit
         </button>
       </div>
