@@ -28,7 +28,7 @@ export default function Home() {
             Creating On-Chain Smart City Data Infrastructure
           </div>
           <div className="text-highlight text-center mt-3">
-            Global Currency for Autonomous Smart Cities
+            Connected Mobility of tomorrow
           </div>
           <div className="p mt-4 text-center">
             KoZMITO is the currency used in the world’s largest application and
