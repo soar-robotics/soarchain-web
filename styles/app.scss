@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 @import 'bootstrap-custom';
 @import '_spacings';
+
+$rsu-title-font-size: 14px;
+
 html,
 body {
   padding: 0;
@@ -85,23 +88,7 @@ header {
   z-index: 20;
 }
 .slider {
-  height: 530px;
-
-  .picture {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width: 62%;
-  }
-  .content {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: #fff;
-    width: 38%;
-  }
-}
-.slider {
-  position: relative;
-  z-index: 13;
+  height: 300px;
 }
 
 .use-cases {
@@ -297,7 +284,7 @@ header {
   margin-right: -50vw;
   background-image: url('/background/glow2.png');
   background-size: cover;
-  height: 4000px;
+  height: 2700px;
   z-index: 10;
   background-repeat: no-repeat;
 }
@@ -309,7 +296,7 @@ header {
   font-size: 500;
 }
 .text-highlight {
-  font-size: 66.4px;
+  font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   @include media-breakpoint-down(md) {
@@ -348,7 +335,7 @@ header {
 }
 
 .rsu-title {
-  font-size: 26px;
+  font-size: $rsu-title-font-size;
   font-weight: 700;
   @include media-breakpoint-down(md) {
     font-size: 16px;
