@@ -1,14 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import NavBar from '../components/NavBar';
-import Card from '../components/Card';
-import Spacing from '../components/Spacing';
 import { useState } from 'react';
+
+import NavBar from '../components/NavBar';
 import Form from '../components/Form';
-import Slider from '../components/Slider';
 import Footer from '../components/Footer';
-import { ArrowRight } from 'react-feather';
-import { mainSliderContext, secondarySliderContext } from '../utils/context/sliderContext';
+import { ExploreSlider, ShowcaseSlider } from '../components/Slider';
 
 export default function Home() {
   const [isAuth, setIsAuth] = useState(false);
@@ -24,178 +21,76 @@ export default function Home() {
       </Head>
 
       <NavBar />
-      <img src='/background/waves-1.png' className='first-shapes' alt='' />
-      <div className='container position-relative mt-md-5 pt-5'>
-        <div className='texts mx-auto position-relative pt-5'>
-          <div className='text-purple p text-center'>
-            Creating On-Chain Smart City Data Infrastructure
-          </div>
-          <div className='text-highlight text-center mt-3'>
-            <span>Connected Mobility of tomorrow</span>
-          </div>
-          <div className='p mt-4 text-center'>
-            Soar Chain is the first blockchain protocol to deploy vehicular ad-hoc networks that
-            enable vehicle-to-everything (V2X) communication and interaction.
-          </div>
-        </div>
 
-        <div className='texts mx-auto position-relative mt-15 pt-10 mb-3'>
-          <div className='text-title text-center'>Safety, security and scalability</div>
-          <div className='p text-center mt-2 mb-4'>
-            Soarchain is the first blockchain to integrate a decentralized layer for all members of
-            mobility
-          </div>
-        </div>
-
-        <div>
-          <div className='pt-5'>
-            <Slider context={mainSliderContext} />
-          </div>
-        </div>
-
-        {/* <div className='row mw-900 mx-auto position-relative cards'>
-          <div className='col-md-4'>
-            <Card title={'Token'} iconPath='/token.png'>
-              KZM is an ERC20 token running on P-chain is hosted by the default node cluster created
-              by RSUs.
-            </Card>
-          </div>
-          <div className='col-md-4'>
-            <Card title={'Sharable'} iconPath='/shareable.png'>
-              KZM incentivizes RSU and DVD owners to share data and ensure seamless integration
-              through a reward system.
-            </Card>
-          </div>
-          <div className='col-md-4'>
-            <Card title={'Payment'} iconPath='/payment.png'>
-              KZM is used as a payment and staking mechanism for data requests.
-            </Card>
-          </div>
-        </div> */}
-
-        <div className='rsu-app position-relative pb-5'>
-          <div className='mt-30 py-30 rsu '>
-            <div className='row'>
-              {/* <div className='col-md-6'> */}
-              <div className='text-highlight pb-10'>
-                SC UNLOCKS <br /> NEW POSSIBILITIES
-              </div>
-              {/* </div> */}
-              {/* <div className='col-md-6'>
-                <img src='/hardware-1.png' className='img-fluid img-hw' alt='' />
-              </div> */}
+      <section className='showcase'>
+        <div className='container position-relative'>
+          <div className='texts mx-auto position-relative pt-5'>
+            <div className='text-highlight text-center mt-3'>
+              <span>Connected Mobility of tomorrow</span>
             </div>
-
-            <div className='row text-center'>
-              <div className='col-md-3'>
-                <div className='rsu-title py-md-3'>Safety & Emergency</div>
-              </div>
-              <div className='col-md-3'>
-                <div className='rsu-title py-md-3'>Smart City</div>
-                <div className='rsu-p'></div>
-              </div>
-              <div className='col-md-3'>
-                <div className='rsu-title py-md-3'>Fleet Management</div>
-              </div>
-              <div className='col-md-3'>
-                <div className='rsu-title py-md-3'>Artificial Intelligence</div>
-              </div>
-              <div className='mt-5 text-md-end p-0'>
-                <Link href='/'>
-                  <a className='btn btn-primary w-25 py-3'>
-                    Explore more <ArrowRight size={15} />{' '}
-                  </a>
-                </Link>
-              </div>
-            </div>
-
-            <img src='/corners/top-left.png' alt='' className='img-corner' />
-          </div>
-
-          <div className='rsu-app-bg'></div>
-          <div className='rsu-app-bg-2'></div>
-        </div>
-
-        <div className='use-cases py-30 row'>
-          <h5 className='text-center'>Soarchain is</h5>
-          <Slider
-            context={secondarySliderContext}
-            controls={false}
-            fade={true}
-            indicators={false}
-            interval={3000}
-          />
-        </div>
-
-        <div className='currency position-relative mb-10'>
-          <div className='text-title text-center '>Meet SCOBU</div>
-
-          <div className='row'>
-            <div className='col-md-6 text-center'>
-              <img src='/hardware-1.png' alt='scobu' className='mw-100' />
-            </div>
-            <div className='col-md-6 mt-5 text-center'>
-              <p>- Mine crypto with your car</p>
+            <div className='p mt-4 text-center'>
+              Soar Chain is the first blockchain protocol to deploy vehicular ad-hoc networks that
+              enable vehicle-to-everything (V2X) communication and interaction.
             </div>
           </div>
 
-          <img src='/corners/top-left.png' className='top-left' alt='' />
-          <img src='/corners/top-right.png' className='top-right' alt='' />
-          <img src='/corners/bottom-right.png' className='bottom-right' alt='' />
-        </div>
-
-        {/* <div className='developers py-30'>
-          <div className='row'>
-            <div className='col-md-6'>
-              <img src='/devpic.png' className='img-fluid' alt='' />
+          <div>
+            <div className='pt-5'>
+              <ShowcaseSlider />
             </div>
-            <div className='col-md-6'>
-              <div className='text-title'>Developers</div>
-              <ul className='ul-line'>
-                <li>
-                  <span className='indicator'></span>
-                  <div className='circle'></div>
-                  <span className='card-p'>
-                    Access to on-chain, secure, multidimensional rich and diverse data set to
-                    develop and test applications.
-                  </span>
-                </li>
-                <li>
-                  <span className='indicator'></span>
-                  <div className='circle'></div>
-                  <span className='card-p'>
-                    Develop applications that vehicles and other nodes can download from RSU cloud.{' '}
-                  </span>
-                </li>
+          </div>
 
-                <li>
-                  <span className='indicator'></span>
-                  <div className='circle'></div>
-                  <span className='card-p'>
-                    Leverage processing capabilities of RSU cloud to automatically test your
-                    application and to tailor the feature set for the targeted node.
-                  </span>
-                </li>
-                <li>
-                  <span className='indicator'></span>
-                  <div className='circle'></div>
-                  <span className='card-p'>
-                    Earn Kozmito coin with each download of your application by any node (vehicles,
-                    drones, scooters, buildings, ...) in the smart city.
-                  </span>
-                </li>
+          <div className='d-flex gap-5 w-75 mx-auto align-items-baseline mt-5'>
+            <div className='outlined-box'>
+              <span className='font-weight-bold'>Safety, security and scalability</span>
+            </div>
+            <div className='text-center'>
+              <span>
+                Soarchain is the first blockchain to integrate a decentralized layer for all members
+                of mobility
+              </span>
+            </div>
+          </div>
+
+          <div className='d-flex justify-content-between align-items-center pt-5'>
+            <div className='text-center w-75 w-md-100'>
+              <h3 className='text-uppercase mb-4'>
+                Soarchain unlocks <br /> new possibilities
+              </h3>
+              <ul className='showcase-ul'>
+                <li>Safety & Emergency</li>
+                <li>Smart City</li>
+                <li>Fleet Management</li>
+                <li>Artificial Intelligence</li>
               </ul>
             </div>
+            <div className='showcase-graphics w-100'></div>
           </div>
-        </div> */}
-
-        <div className='mt-5'>
-          <Footer />
         </div>
-      </div>
+      </section>
 
-      {/* <img src="/waves.png" className="waves1" alt="" /> */}
-      {/* <img src="/shapes.png" className="shapes1" alt="" /> */}
+      <section className='explore'>
+        <div className='container position-relative mt-md-5 py-5'>
+          <h5 className='text-center text-primary text-uppercase fw-bold'>soarchain is</h5>
+          <ExploreSlider />
+        </div>
+      </section>
+
+      <section className='scobu'>
+        <div className='container position-relative mt-md-5 py-30 text-center'>
+          <p className='display-6 fw-bold m-0 text-uppercase mb-5'>meet scobu</p>
+          <p className='mb-5'>Mine crypto with your car</p>
+          <Link href='#'>
+            <a type='button' className='btn btn-outline-light text-uppercase py-2 px-5'>
+              <small>explore more</small>
+            </a>
+          </Link>
+        </div>
+      </section>
+
+      <section className='footer'>
+        <Footer />
+      </section>
     </div>
   );
 }
