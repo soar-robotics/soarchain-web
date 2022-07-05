@@ -3,19 +3,19 @@ import { Shield } from 'react-feather';
 export const showcaseSliderContext = [
   {
     title: 'Securing the data',
-    icon: <Shield size={150} strokeWidth={1} className='text-primary' />,
+    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
   },
   {
     title: 'Empower people',
-    icon: <Shield size={150} strokeWidth={1} className='text-primary' />,
+    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
   },
   {
     title: 'Connected vehicles',
-    icon: <Shield size={150} strokeWidth={1} className='text-primary' />,
+    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
   },
   {
     title: 'Autonomy',
-    icon: <Shield size={150} strokeWidth={1} className='text-primary' />,
+    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
   },
 ];
 

@@ -326,10 +326,39 @@ header {
 .explore {
   background: white;
   color: #010420;
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      right: 140px;
+      width: 100px;
+      height: 100px;
+      content: '';
+      background: url('/ball.png') no-repeat center/cover;
+    }
+    &::before {
+      position: absolute;
+      bottom: -150px;
+      left: -80px;
+      width: 200px;
+      height: 200px;
+      content: '';
+      background: url('/ball.png') no-repeat center/cover;
+      filter: blur(6px);
+      opacity: 0.7;
+      z-index: 1;
+    }
+  }
 }
 
 .scobu {
+  position: relative;
   background: url('/background/scobu.png') no-repeat center/cover;
+  z-index: 2;
 }
 
 .footer {
