@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 import NavBar from '../components/NavBar';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
 import { ExploreSlider, ShowcaseSlider } from '../components/Slider';
+import { scobuExploreItems } from '../utils/context/scobuContext';
 
 export default function Home() {
   const [isAuth, setIsAuth] = useState(false);
@@ -79,7 +80,17 @@ export default function Home() {
       <section className='scobu'>
         <div className='container position-relative mt-md-5 py-30 text-center'>
           <p className='display-6 fw-bold m-0 text-uppercase mb-5'>meet scobu</p>
-          <p className='mb-5'>Mine crypto with your car</p>
+          <div className='d-flex py-15 justify-content-center'>
+            <hr className='position-absolute w-100' style={{ zIndex: '1' }} />
+            {scobuExploreItems.map((item, index) => (
+              <div key={index} className='scobu-item'>
+                <span className={`scobu-item-point`}></span>
+                <span className={`scobu-item${index % 2 === 0 ? '-reverse' : ''}-text`}>
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
           <Link href='#'>
             <a type='button' className='btn btn-outline-light text-uppercase py-2 px-5'>
               <small>explore more</small>

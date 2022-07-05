@@ -359,6 +359,32 @@ header {
   position: relative;
   background: url('/background/scobu.png') no-repeat center/cover;
   z-index: 2;
+
+  &-item {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-size: 12px;
+    z-index: 2;
+
+    &-point {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: $primary;
+    }
+
+    &-reverse {
+      flex-direction: column-reverse;
+
+      &-text {
+        transform: translateY(calc(-100% - 100px - 20px));
+      }
+    }
+  }
 }
 
 .footer {
