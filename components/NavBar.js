@@ -13,6 +13,22 @@ const NavBar = () => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
             <NavDropdown
+              title={<span className='text-primary'>Solutions</span>}
+              id='solutions-dropdown'
+            >
+              <NavDropdown.Header>Products</NavDropdown.Header>
+
+              <NavDropdown.Item className='text-capitalize' href='/solutions/soarchain'>
+                soarchain
+              </NavDropdown.Item>
+              <NavDropdown.Item className='text-capitalize' href='/solutions/scobu'>
+                SCOBU
+              </NavDropdown.Item>
+              <NavDropdown.Item className='text-capitalize' href='/solutions/roadmap'>
+                roadmap
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
               title={<span className='text-primary'>Explore</span>}
               id='explore-dropdown'
             >

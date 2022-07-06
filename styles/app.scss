@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap');
+
 @import 'bootstrap-custom';
-@import '_spacings';
+@import 'spacings';
+@import 'var/colors';
+@import 'var/sizing';
 
-$rsu-title-font-size: 14px;
-
-$dark-blue: #17032c;
+@import 'pages/home';
+@import 'pages/solutions/soarchain';
 
 html,
 body {
@@ -105,6 +107,8 @@ header {
 }
 .slider {
   height: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
@@ -242,24 +246,6 @@ header {
         align-items: center;
         max-width: 70%;
       }
-
-      // &:before {
-      //   content: '';
-      //   position: absolute;
-      //   left: 0;
-      //   width: 30px;
-      //   height: 4px;
-      //   background-color: #b1afff;
-      // }
-      // &::after {
-      //   content: '';
-      //   position: absolute;
-      //   left: 30px;
-      //   width: 10px;
-      //   height: 10px;
-      //   border-radius: 50%;
-      //   background-color: #b1afff;
-      // }
     }
 
     .card-p {
@@ -308,98 +294,6 @@ header {
     transform: rotate(45deg);
     margin-left: -10px;
     background: $dark-blue;
-  }
-}
-
-.showcase {
-  padding-top: 10rem;
-  background: url('/background/background.jpg') no-repeat;
-  background-position: center;
-
-  &-ul {
-    background: url('/ul-style.png') no-repeat;
-    background-position: center left;
-    background-size: contain;
-    list-style: none;
-    padding-top: 1.5rem;
-    width: 70%;
-    margin: auto;
-
-    li {
-      margin-bottom: 1.2rem;
-    }
-  }
-
-  &-graphics {
-    width: 600px;
-    height: 600px;
-    background: url('/showcase-graphics.png') no-repeat;
-    background-position: center right;
-    background-size: contain;
-  }
-}
-
-.explore {
-  background: white;
-  color: #010420;
-
-  .container {
-    position: relative;
-    z-index: 2;
-
-    &::after {
-      position: absolute;
-      top: -40px;
-      right: 140px;
-      width: 100px;
-      height: 100px;
-      content: '';
-      background: url('/ball.png') no-repeat center/cover;
-    }
-    &::before {
-      position: absolute;
-      bottom: -120px;
-      left: -80px;
-      width: 200px;
-      height: 200px;
-      content: '';
-      background: url('/ball.png') no-repeat center/cover;
-      filter: blur(6px);
-      opacity: 0.7;
-      z-index: 1;
-    }
-  }
-}
-
-.scobu {
-  position: relative;
-  background: url('/background/scobu.png') no-repeat center/cover;
-  z-index: 2;
-
-  &-item {
-    margin-top: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    font-size: 12px;
-    z-index: 2;
-
-    &-point {
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      border-radius: 50%;
-      background-color: $primary;
-    }
-
-    &-reverse {
-      flex-direction: column-reverse;
-
-      &-text {
-        transform: translateY(calc(-100% - 100px - 20px));
-      }
-    }
   }
 }
 
@@ -458,7 +352,7 @@ header {
 
 /// TEXTS ///
 .text-purple {
-  color: #b2b0ff;
+  color: $purple;
   font-size: 18px;
   font-size: 500;
 }
@@ -471,11 +365,14 @@ header {
   }
 }
 
-.text-title {
-  font-size: 43px;
-  font-weight: 700;
-  @include media-breakpoint-down(md) {
-    font-size: 35px;
+.text {
+  &-title {
+    font-size: 42px;
+    font-weight: 700;
+
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
   }
 }
 

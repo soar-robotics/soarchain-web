@@ -31,7 +31,7 @@ export const ShowcaseSlider = ({ ...rest }) => {
       className='slider'
     >
       {showcaseSliderContext.map((item, index) => (
-        <Carousel.Item key={index} className='p-5'>
+        <Carousel.Item key={index}>
           <div className='d-flex flex-column flex-md-row justify-content-center gap-4 align-items-center w-50 mx-auto'>
             <span className='w-25 w-md-100'>{item.icon}</span>
             <span className='display-6 font-weight-light m-0 text-center'>{item.title}</span>
@@ -69,7 +69,7 @@ export const ExploreSlider = ({ ...rest }) => {
       className='slider'
     >
       {exploreSliderContext.map((item, index) => (
-        <Carousel.Item key={index} className='p-5'>
+        <Carousel.Item key={index}>
           <div className='d-flex flex-column gap-4 align-items-center w-75 mx-auto text-center'>
             <span className='display-6 fw-bold m-0'>{item.title}</span>
             <div className='separator'></div>

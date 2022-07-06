@@ -1,6 +1,8 @@
 import '../styles/app.scss';
 import { Fragment, useEffect } from 'react';
+
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -10,6 +12,9 @@ function MyApp({ Component, pageProps }) {
     <Fragment>
       <NavBar />
       <Component {...pageProps} />
+      <section className='footer'>
+        <Footer />
+      </section>
     </Fragment>
   );
 }
