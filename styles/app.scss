@@ -7,6 +7,7 @@
 
 @import 'pages/home';
 @import 'pages/solutions/soarchain';
+@import 'pages/solutions/motus';
 
 html,
 body {
@@ -215,9 +216,7 @@ header {
       display: none;
     }
   }
-  .text-title {
-    margin-left: -15px;
-  }
+
   .ul-line {
     list-style: none;
     margin: 0;
@@ -369,9 +368,6 @@ header {
 }
 
 /// TEXTS ///
-.text-purple {
-  color: $purple;
-}
 .text-highlight {
   font-size: 60px;
   line-height: 60px;
@@ -382,6 +378,13 @@ header {
 }
 
 .text {
+  &-purple {
+    color: $purple;
+  }
+  &-dark-blue {
+    color: $dark-blue;
+  }
+
   &-title {
     font-size: 42px;
     font-weight: 700;
