@@ -4,16 +4,16 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
   return (
-    <Navbar className='navbar' variant='dark' expand='lg'>
+    <Navbar className='navbar' variant='' expand='md'>
       <Container>
-        <Navbar.Brand href='#home'>
+        <Navbar.Brand href='/'>
           <Image src='/Logo.png' width={216} height={68} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
             <NavDropdown
-              title={<span className='text-primary'>Solutions</span>}
+              title={<span className='text-purple'>Solutions</span>}
               id='solutions-dropdown'
             >
               <NavDropdown.Header>Products</NavDropdown.Header>
@@ -28,10 +28,7 @@ const NavBar = () => {
                 roadmap
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown
-              title={<span className='text-primary'>Explore</span>}
-              id='explore-dropdown'
-            >
+            <NavDropdown title={<span className='text-purple'>Explore</span>} id='explore-dropdown'>
               <NavDropdown.Header>Quick Start</NavDropdown.Header>
 
               <NavDropdown.Item className='text-capitalize' href='/explore/users'>
@@ -65,7 +62,7 @@ const NavBar = () => {
             </NavDropdown>
             <NavDropdown
               dir
-              title={<span className='text-primary'>Develop</span>}
+              title={<span className='text-purple'>Develop</span>}
               menuVariant='horizontal'
               id='develop-dropdown'
             >
