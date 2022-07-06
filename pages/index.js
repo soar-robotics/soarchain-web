@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import Form from '../components/Form';
 import { ExploreSlider, ShowcaseSlider } from '../components/Slider';
-import { scobuExploreItems } from '../utils/context/scobuContext';
+import { motusExploreItems } from '../utils/context/motusContext';
 
 export default function Home() {
   const [isAuth, setIsAuth] = useState(false);
@@ -74,15 +74,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='scobu'>
+        <section className='motus'>
           <div className='container position-relative py-30 text-center'>
-            <p className='display-6 fw-bold m-0 text-uppercase mb-5'>meet scobu</p>
+            <p className='display-6 fw-bold m-0 text-uppercase mb-5'>meet motus</p>
             <div className='d-flex py-15 justify-content-center'>
               <hr className='position-absolute w-100' style={{ zIndex: '1' }} />
-              {scobuExploreItems.map((item, index) => (
-                <div key={index} className='scobu-item'>
-                  <span className={`scobu-item-point`}></span>
-                  <span className={`scobu-item${index % 2 === 0 ? '-reverse' : ''}-text`}>
+              {motusExploreItems.map((item, index) => (
+                <div key={index} className='motus-item'>
+                  <span className={`motus-item-point`}></span>
+                  <span className={`motus-item${index % 2 === 0 ? '-reverse' : ''}-text`}>
                     {item}
                   </span>
                 </div>

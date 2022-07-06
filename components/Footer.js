@@ -36,7 +36,7 @@ const Footer = () => {
               <Link href='/explore/what-is-soarchain'>What is Soarchain</Link>
               <Link href='/explore/srx'>SRX</Link>
               <Link href='/explore/buy-srx'>Buy SRX</Link>
-              <Link href='/explore/scobu'>SCOBU</Link>
+              <Link href='/explore/motus'>MOTUS</Link>
             </div>
           </div>
           <small className='mt-auto'>

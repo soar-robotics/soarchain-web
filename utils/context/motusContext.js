@@ -1,4 +1,4 @@
-export const scobuExploreItems = [
+export const motusExploreItems = [
   'Higher autonomy, less human interaction',
   'Drive more efficiently and economically',
   'Get rewarded with cryptocurrency',

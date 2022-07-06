@@ -118,17 +118,18 @@ header {
   width: 100%;
   z-index: 1000;
   background: linear-gradient($dark-blue, rgba($dark-blue, 0.5), transparent);
-  padding-bottom: 5rem;
-
-  &-toggler {
-    color: white;
-  }
+  padding-bottom: 2rem;
 
   .dropdown {
     &-menu {
       background: $dark-blue;
       border-radius: 0;
       border: solid 1px $purple;
+
+      @include media-breakpoint-down(md) {
+        border: none;
+        padding-top: 0;
+      }
     }
 
     &-item {
@@ -142,6 +143,7 @@ header {
 
   @include media-breakpoint-down(md) {
     background: $dark-blue;
+    padding-bottom: 0;
   }
 }
 

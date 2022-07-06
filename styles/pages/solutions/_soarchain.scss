@@ -22,6 +22,7 @@
         width: 75%;
         max-width: 100%;
         height: 100%;
+        top: 0;
         background-position: center;
         margin: 0 auto;
       }
@@ -47,7 +48,7 @@
         right: 0;
         top: 0;
         content: '';
-        background: rgba($color: #000000, $alpha: 0.8) center/cover;
+        background: rgba($color: #000000, $alpha: 0.65) center/cover;
       }
     }
 

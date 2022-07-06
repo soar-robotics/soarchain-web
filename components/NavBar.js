@@ -4,7 +4,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
   return (
-    <Navbar className='navbar' variant='' expand='md'>
+    <Navbar className='navbar' variant='dark' expand='md'>
       <Container>
         <Navbar.Brand href='/'>
           <Image src='/Logo.png' width={216} height={68} />
@@ -21,8 +21,8 @@ const NavBar = () => {
               <NavDropdown.Item className='text-capitalize' href='/solutions/soarchain'>
                 soarchain
               </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/solutions/scobu'>
-                SCOBU
+              <NavDropdown.Item className='text-capitalize' href='/solutions/motus'>
+                MOTUS
               </NavDropdown.Item>
               <NavDropdown.Item className='text-capitalize' href='/solutions/roadmap'>
                 roadmap
@@ -56,8 +56,8 @@ const NavBar = () => {
               <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
                 buy SRX
               </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/scobu'>
-                SCOBU
+              <NavDropdown.Item className='text-capitalize' href='/explore/motus'>
+                MOTUS
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
@@ -93,8 +93,8 @@ const NavBar = () => {
               <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
                 buy SRX
               </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/scobu'>
-                SCOBU
+              <NavDropdown.Item className='text-capitalize' href='/explore/motus'>
+                MOTUS
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
