@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 
 import NavBar from '../components/NavBar';
 import Form from '../components/Form';

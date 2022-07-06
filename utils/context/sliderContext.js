@@ -1,21 +1,23 @@
+import Image from 'next/image';
+
 import { Shield } from 'react-feather';
 
 export const showcaseSliderContext = [
   {
     title: 'Securing the data',
-    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
+    icon: <Image src='/icon/security.png' alt='security' width={144} height={185} />,
   },
   {
     title: 'Empower people',
-    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
+    icon: <Image src='/icon/power.png' alt='power' width={144} height={185} />,
   },
   {
     title: 'Connected vehicles',
-    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
+    icon: <Image src='/icon/connection.png' alt='connection' width={144} height={185} />,
   },
   {
     title: 'Autonomy',
-    icon: <Shield size={150} strokeWidth={1} className='text-warning' />,
+    icon: <Image src='/icon/autonomy.png' alt='autonomy' width={170} height={185} />,
   },
 ];
 
