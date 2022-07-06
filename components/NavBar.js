@@ -4,7 +4,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
   return (
-    <Navbar className='navbar' variant='dark' expand='lg' style={{ zIndex: '1000' }}>
+    <Navbar className='navbar' variant='dark' expand='lg'>
       <Container>
         <Navbar.Brand href='#home'>
           <Image src='/Logo.png' width={216} height={68} />

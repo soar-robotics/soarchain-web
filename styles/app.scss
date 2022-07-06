@@ -11,8 +11,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Open Sans' !important;
-  background: url('/background/background.jpg') no-repeat;
-  background-position: top center;
+  // background: url('/background/background.jpg') no-repeat;
+  // background-position: top center;
   color: #fff !important;
   overflow-x: hidden;
 }
@@ -108,8 +108,11 @@ header {
 }
 
 .navbar {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
   &::before {
     position: absolute;
@@ -309,6 +312,10 @@ header {
 }
 
 .showcase {
+  padding-top: 10rem;
+  background: url('/background/background.jpg') no-repeat;
+  background-position: center;
+
   &-ul {
     background: url('/ul-style.png') no-repeat;
     background-position: center left;
@@ -351,7 +358,7 @@ header {
     }
     &::before {
       position: absolute;
-      bottom: -150px;
+      bottom: -120px;
       left: -80px;
       width: 200px;
       height: 200px;

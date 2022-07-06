@@ -32,9 +32,9 @@ export const ShowcaseSlider = ({ ...rest }) => {
     >
       {showcaseSliderContext.map((item, index) => (
         <Carousel.Item key={index} className='p-5'>
-          <div className='d-flex justify-content-center gap-4 align-items-center w-50 mx-auto'>
-            <span>{item.icon}</span>
-            <span className='display-6 font-weight-light m-0'>{item.title}</span>
+          <div className='d-flex flex-column flex-md-row justify-content-center gap-4 align-items-center w-50 mx-auto'>
+            <span className='w-25 w-md-100'>{item.icon}</span>
+            <span className='display-6 font-weight-light m-0 text-center'>{item.title}</span>
           </div>
         </Carousel.Item>
       ))}
