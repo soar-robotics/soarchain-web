@@ -11,3 +11,48 @@ export const motusMainFeatures = [
   'Storage and processing power for executing proof-of-availability',
   'Wi-Fi and Bluetooth for user/driver connectivity',
 ];
+
+export const motusUseCases = [
+  {
+    title: 'Safety & Emergency',
+    description: (
+      <p>
+        Traffic safety & predictive collision warnings
+        <br />
+        Real time weather & hazard notifications
+        <br />
+        Automatic emergency calls (eCall)
+        <br /> Roadside assistance and medical emergencies
+        <br /> Driver-assist features & skills improvement Safe city intelligence system
+      </p>
+    ),
+  },
+  {
+    title: 'Artificial Intelligence',
+    description: (
+      <p>
+        Traffic safety & predictive collision warnings
+        <br />
+        Real time weather & hazard notifications
+        <br />
+        Automatic emergency calls (eCall)
+        <br /> Roadside assistance and medical emergencies
+        <br /> Driver-assist features & skills improvement Safe city intelligence system
+      </p>
+    ),
+  },
+  {
+    title: 'Smart City',
+    description: (
+      <p>
+        Traffic safety & predictive collision warnings
+        <br />
+        Real time weather & hazard notifications
+        <br />
+        Automatic emergency calls (eCall)
+        <br /> Roadside assistance and medical emergencies
+        <br /> Driver-assist features & skills improvement Safe city intelligence system
+      </p>
+    ),
+  },
+];

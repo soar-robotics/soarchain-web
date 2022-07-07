@@ -16,6 +16,11 @@ const NavBar = () => {
               title={<span className='text-purple'>Solutions</span>}
               id='solutions-dropdown'
             >
+              <NavDropdown.Header>Industries</NavDropdown.Header>
+              <NavDropdown.Item className='text-capitalize' href='/solutions/application-ecosystem'>
+                application ecosystem
+              </NavDropdown.Item>
+
               <NavDropdown.Header>Products</NavDropdown.Header>
 
               <NavDropdown.Item className='text-capitalize' href='/solutions/soarchain'>
