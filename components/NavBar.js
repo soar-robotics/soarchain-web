@@ -13,94 +13,150 @@ const NavBar = () => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
             <NavDropdown
-              title={<span className='text-purple'>Solutions</span>}
+              title={<span className='text-white'>Solutions</span>}
               id='solutions-dropdown'
             >
-              <NavDropdown.Header>Industries</NavDropdown.Header>
-              <NavDropdown.Item className='text-capitalize' href='/solutions/application-ecosystem'>
-                application ecosystem
-              </NavDropdown.Item>
+              <div className='d-md-flex gap-3 pe-3'>
+                <div>
+                  <NavDropdown.Header>Industries</NavDropdown.Header>
+                  <NavDropdown.Item
+                    className='text-capitalize'
+                    href='/solutions/mobility-and-connectivity'
+                  >
+                    mobility and connectivity
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-uppercase' href='/solutions/cv2x'>
+                    cv2x
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className='text-capitalize'
+                    href='/solutions/application-ecosystem'
+                  >
+                    application ecosystem
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className='text-capitalize'
+                    href='/solutions/application-ecosystem'
+                  >
+                    lightpaper (coming soon)
+                  </NavDropdown.Item>
+                </div>
+                <div>
+                  <NavDropdown.Header>Products</NavDropdown.Header>
 
-              <NavDropdown.Header>Products</NavDropdown.Header>
-
-              <NavDropdown.Item className='text-capitalize' href='/solutions/soarchain'>
-                soarchain
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/solutions/motus'>
-                MOTUS
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/solutions/roadmap'>
-                roadmap
-              </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/solutions/soarchain'>
+                    soarchain
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-uppercase' href='/solutions/motus'>
+                    motus
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/solutions/roadmap'>
+                    roadmap (coming soon)
+                  </NavDropdown.Item>
+                </div>
+              </div>
             </NavDropdown>
-            <NavDropdown title={<span className='text-purple'>Explore</span>} id='explore-dropdown'>
-              <NavDropdown.Header>Quick Start</NavDropdown.Header>
+            <NavDropdown title={<span className='text-white'>Explore</span>} id='explore-dropdown'>
+              <div className='d-md-flex gap-3 pe-3'>
+                <div>
+                  <NavDropdown.Header>Quick Start</NavDropdown.Header>
 
-              <NavDropdown.Item className='text-capitalize' href='/explore/users'>
-                users
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
-                Developers
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/business'>
-                Business
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/investors'>
-                Investors
-              </NavDropdown.Item>
-              <NavDropdown.Divider className='rotate-90' />
+                  <NavDropdown.Item className='text-capitalize' href='/explore/users'>
+                    users
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
+                    Developers
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/business'>
+                    Business
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/investors'>
+                    Investors
+                  </NavDropdown.Item>
+                </div>
+                <div>
+                  <NavDropdown.Header>Soarchain</NavDropdown.Header>
 
-              <NavDropdown.Header>Soarchain</NavDropdown.Header>
-
-              <NavDropdown.Item className='text-capitalize' href='/explore/what-is-soarchain'>
-                what is soarchain
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
-                SRX
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
-                buy SRX
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/motus'>
-                MOTUS
-              </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/what-is-soarchain'>
+                    what is soarchain
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
+                    soarcoin (coming soon)
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
+                    buy soarcoin (coming soon)
+                  </NavDropdown.Item>
+                </div>
+              </div>
             </NavDropdown>
             <NavDropdown
               dir
-              title={<span className='text-purple'>Develop</span>}
+              title={<span className='text-white'>Develop</span>}
               menuVariant='horizontal'
               id='develop-dropdown'
             >
-              <NavDropdown.Header>Quick Start</NavDropdown.Header>
+              <div className='d-md-flex gap-3 pe-3'>
+                <div>
+                  <NavDropdown.Header>Quick Start</NavDropdown.Header>
 
-              <NavDropdown.Item className='text-capitalize' href='/explore/users'>
-                users
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
-                Developers
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/business'>
-                Business
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/investors'>
-                Investors
-              </NavDropdown.Item>
-              <NavDropdown.Divider dir='vertical' />
+                  <NavDropdown.Item className='text-capitalize' href='/explore/users'>
+                    users
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
+                    Developers
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/business'>
+                    Business
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/investors'>
+                    Investors
+                  </NavDropdown.Item>
+                </div>
+                <div>
+                  <NavDropdown.Header>Soarchain</NavDropdown.Header>
 
-              <NavDropdown.Header>Soarchain</NavDropdown.Header>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/what-is-soarchain'>
+                    what is soarchain
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
+                    SRX
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
+                    buy SRX
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/explore/motus'>
+                    MOTUS
+                  </NavDropdown.Item>
+                </div>
+              </div>
+            </NavDropdown>
+            <NavDropdown
+              dir
+              title={<span className='text-white'>Connect</span>}
+              menuVariant='horizontal'
+              id='develop-dropdown'
+            >
+              <div className='d-md-flex gap-3'>
+                <div className='w-100'>
+                  {/* <NavDropdown.Header>Connect</NavDropdown.Header> */}
 
-              <NavDropdown.Item className='text-capitalize' href='/explore/what-is-soarchain'>
-                what is soarchain
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
-                SRX
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
-                buy SRX
-              </NavDropdown.Item>
-              <NavDropdown.Item className='text-capitalize' href='/explore/motus'>
-                MOTUS
-              </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/connect/team'>
+                    team
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/connect/community'>
+                    community
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/connect/business'>
+                    socials
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/connect/investors'>
+                    partners
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/connect/news'>
+                    news
+                  </NavDropdown.Item>
+                </div>
+              </div>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
