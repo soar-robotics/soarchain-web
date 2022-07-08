@@ -103,7 +103,7 @@ export default function Home() {
             </div>
             <Link href='#'>
               <a type='button' className='btn btn-outline-light text-uppercase py-2 px-5'>
-                <small>explore more</small>
+                <small>learn more</small>
               </a>
             </Link>
           </div>

@@ -7,7 +7,7 @@ const NavBar = () => {
     <Navbar className='navbar' variant='dark' expand='md'>
       <Container>
         <Navbar.Brand href='/'>
-          <Image src='/Logo.png' width={216} height={68} />
+          <Image alt='soarchain' src='/logo/text-solid.png' width={216} height={68} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
@@ -62,7 +62,7 @@ const NavBar = () => {
                     users
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
-                    Developers
+                    Developers (coming soon)
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/business'>
                     Business

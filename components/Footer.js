@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='col col-md-4 d-flex flex-column'>
           <div>
             <Link href={'/'}>
-              <Image src='/Logo.png' width={216} height={68} />
+              <Image alt='soarchain' src='/logo/text-hollow.png' width={216} height={68} />
             </Link>
           </div>
           <div className='d-flex flex-column mt-auto'>
@@ -64,7 +64,13 @@ const Footer = () => {
           </div>
           <div className='mt-auto'>
             <Link href={'https://twitter.com/soarrobotics'}>
-              <Image src='/twitter.png' width={32} height={27} className='cursor-pointer' />
+              <Image
+                alt='soarchain-twitter'
+                src='/twitter.png'
+                width={32}
+                height={27}
+                className='cursor-pointer'
+              />
             </Link>
           </div>
         </div>
