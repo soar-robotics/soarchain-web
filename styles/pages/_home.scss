@@ -61,8 +61,19 @@
 
   .motus {
     position: relative;
-    background: url('/background/motus.png') no-repeat center/cover;
+    background: url('/motus/motus-cement-bg.png') no-repeat center/cover;
     z-index: 2;
+
+    &::after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba($color: #000000, $alpha: 0.7);
+      content: '';
+      z-index: -1;
+    }
 
     &-item {
       margin-top: 6px;
@@ -89,5 +100,9 @@
         }
       }
     }
+  }
+
+  .ecosystem {
+    background: $dark-blue;
   }
 }

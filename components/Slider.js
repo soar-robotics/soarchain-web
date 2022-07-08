@@ -76,7 +76,7 @@ export const ExploreSlider = ({ ...rest }) => {
             <span>{item.description}</span>
             <Link href='#'>
               <a className='btn btn-primary py-2 px-5 text-uppercase text-white'>
-                <small>explore more</small>
+                <small>learn more</small>
               </a>
             </Link>
           </div>

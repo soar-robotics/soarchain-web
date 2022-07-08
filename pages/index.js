@@ -67,6 +67,21 @@ export default function Home() {
           </div>
         </section>
 
+        <section className='ecosystem'>
+          <div className='container position-relative py-5'>
+            <h5 className='text-center text-purple text-uppercase fw-bold'>
+              explore application ecosystem
+            </h5>
+            <div className='text-center mt-5'>
+              <Link href='/solutions/application-ecosystem'>
+                <a className='btn btn-purple py-2 px-5 text-uppercase text-white'>
+                  <small>explore more</small>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className='explore'>
           <div className='container position-relative py-5'>
             <h5 className='text-center text-primary text-uppercase fw-bold'>soarchain is</h5>
@@ -76,7 +91,11 @@ export default function Home() {
 
         <section className='motus'>
           <div className='container position-relative py-30 text-center'>
-            <p className='display-6 fw-bold m-0 text-uppercase mb-5'>meet motus</p>
+            <p className='display-6 fw-bold m-0 text-uppercase mb-3'>meet motus</p>
+            <p className='mb-5'>
+              A plug-and-play device with state of the art C-V2X capabilities to fit different
+              vehicle and user configurations.
+            </p>
             <div className='d-flex py-15 justify-content-center'>
               <hr className='position-absolute w-100' style={{ zIndex: '1' }} />
               {motusExploreItems.map((item, index) => (
