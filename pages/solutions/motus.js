@@ -19,8 +19,8 @@ function Motus() {
               open-source connectivity modules with V2V, V2N, V2P and V2X capabilities.
               <br />
               <br />
-              The system is designed to fit different vehicles and user configurations(4-wheelers,
-              2-wheelers, pedestrians, micromobility, Road-side units).
+              The system is designed to fit different vehicles and user configurations such as 4-wheelers,
+              2-wheelers, pedestrians, micromobility, Road-side units.
             </p>
             <Btn href='#' text='pre-order now' className='mt-4' />
           </div>
