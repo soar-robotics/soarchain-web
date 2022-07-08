@@ -7,10 +7,11 @@ export const motusExploreItems = [
 
 export const motusMainFeatures = [
   'Direct vehicle-to-vehicle wireless communication',
-  'State-of-the-art Cellular-V2X physical layer(PC5)',
-  'Cellular communication(5G-NR/4G-LTE)',
+  'State-of-the-art Cellular-V2X physical layer',
+  'Cellular communication (5G-NR/4G-LTE)',
   'Storage and processing power for executing proof-of-availability',
   'Wi-Fi and Bluetooth for user/driver connectivity',
+  'Proof-of-availability with signed and encrypted Cooperative Awareness Message',
 ];
 
 export const motusUseCases = [
