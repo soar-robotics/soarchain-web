@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const motusExploreItems = [
   'Higher autonomy, less human interaction',
   'Drive more efficiently and economically',
@@ -54,5 +56,100 @@ export const motusUseCases = [
         <br /> Driver-assist features & skills improvement Safe city intelligence system
       </p>
     ),
+  },
+];
+
+export const motusOverview = [
+  {
+    title: 'Overview',
+    image: <Image alt='motus' src='/motus/front.png' width={1600} height={899} />,
+    description: (
+      <p>
+        - Receive and transfer different kinds of V2X messages through PC5 <br />
+        - Your identity is safe and your privacy is not invaded. <br />
+        - Use whenever and wherever you like <br />- Track your rewards from the Soar Mobile App
+      </p>
+    ),
+  },
+  {
+    title: 'Earn while Driving',
+    // image: <Image alt='srx' src='/srx/logo.png' width={675} height={510} />,
+    description: (
+      <p>
+        Transactions between other vehicles are validated by the network and users get rewarded with
+        SR cryptocurrency. Also, you are contributing to safer roads for everyone including
+        yourself.
+      </p>
+    ),
+  },
+  {
+    title: 'Enjoy your Privacy',
+    // image: <Image alt='privacy' src='/lock-graphics.png' width={640} height={640} />,
+    description: (
+      <p>
+        Your identity is safe with MOTUS, free to choose what to share and what not to. There is no
+        central authority to track and record your data.
+      </p>
+    ),
+  },
+  {
+    title: 'Ready to use',
+    image: <Image alt='ready-to-use' src='/motus/hand-top.png' width={1920} height={1080} />,
+    description: (
+      <p>
+        With plug-and-play design you can connect it to your existing vehicle. MOTUS is compatible
+        with most of the vehicles on the market. We are providing everything you need to start
+        connecting.
+      </p>
+    ),
+  },
+];
+
+export const motusTechSpecs = [
+  {
+    title: 'core',
+    specs: ['1.8GHz 4-Core ARM Processor', '4 GB LPDDR4', '128 GB eMMC'],
+  },
+  {
+    title: 'sensors',
+    specs: [
+      '9DOF MEMS',
+      'Trusted Platform Module (TPM)',
+      'Hardware Security Module (HSM)',
+      'Temperature Sensor',
+      'Air Pressure Sensor',
+      'Air Quality Sensor',
+      'Humidity Sensor',
+      'RTC and Cell Battery',
+    ],
+  },
+  {
+    title: 'interfaces & connectivity',
+    specs: [
+      '2 x USB Host',
+      'USB Serial',
+      'MicroSD',
+      'SIM Card',
+      '8 x GPIO',
+      '4 x ADC',
+      'Display Support',
+      'CV2X',
+      'GNSS',
+      'LTE up to Cat 16',
+      'Wi-Fi 6 802.11 a/b/g/n/ac/ax',
+      'BT 5.1',
+      'CAN FD',
+      'KLine/LIN Interface*',
+      'Ethernet (10/100 Mbps)',
+      'MODBUS (RS485, RS422)',
+    ],
+  },
+  {
+    title: 'power',
+    specs: ['Input Voltage Range : 12-36V', 'Battery (Li-Poly, 5000mAh+)'],
+  },
+  {
+    title: 'mechanical',
+    specs: ['Dimensions : 203,12 x 84,0 x 44,53mm', 'Tamper Detection', 'IPC Certificate'],
   },
 ];

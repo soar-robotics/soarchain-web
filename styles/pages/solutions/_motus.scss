@@ -1,10 +1,16 @@
 .motus {
   .showcase {
-    background: url('/pages/solutions/motus/showcase-bg.png') no-repeat center/cover;
+    background: url('/pages/solutions/motus/showcase-bg.png') no-repeat;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
     padding-top: 10rem;
     padding-bottom: 10rem;
     position: relative;
+
+    @include media-breakpoint-up(xxl) {
+      background-attachment: unset;
+    }
 
     &::after {
       position: absolute;
@@ -26,15 +32,20 @@
       width: 60%;
 
       @include media-breakpoint-down(md) {
-        width: 90%;
+        width: 100%;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 50%;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 45%;
       }
     }
   }
 
   .features {
     background: $dark-blue;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding: 5rem 0;
 
     &-list {
       position: relative;
@@ -76,6 +87,44 @@
 
         &::after {
           left: -1px;
+        }
+      }
+    }
+  }
+
+  .specs {
+    padding: 5rem 0;
+    // background: $dark-blue;
+    color: $dark-blue;
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      .item {
+        padding: 1rem;
+        cursor: pointer;
+        text-transform: capitalize;
+
+        &::after {
+          width: 0;
+          content: '';
+        }
+
+        &.active {
+          position: relative;
+
+          &::after {
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            background: $purple;
+            transition: width 0.5s ease;
+          }
         }
       }
     }

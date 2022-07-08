@@ -38,18 +38,39 @@ a {
 }
 
 .btn {
-  &-dark-blue {
+  &-dark {
     background: $dark-blue;
     color: white;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: $purple;
+    }
   }
 
   &-purple {
     background: $purple;
-    color: $dark-blue;
+    color: white;
+    border: none;
 
     &:hover,
     &:active {
-      background: darken($color: $purple, $amount: 10%);
+      color: white;
+      background: $dark-purple;
+    }
+  }
+
+  &-outline {
+    &-dark {
+      color: $dark-blue;
+      border-color: $dark-blue;
+
+      &:hover,
+      &:active {
+        color: white;
+        background-color: $dark-blue;
+      }
     }
   }
 }
@@ -333,7 +354,8 @@ header {
   background: white;
   font-size: 12px;
   color: #000;
-  margin: 2rem 0;
+  border-top: 3px solid $purple;
+  padding: 2rem 0;
 
   .title {
     font-size: 15px;

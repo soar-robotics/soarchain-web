@@ -54,7 +54,7 @@ const Footer = () => {
                 aria-describedby='newsletter-email'
               />
               <Button
-                className='btn-dark-blue rounded-0'
+                className='btn-dark rounded-0'
                 variant='outline-secondary'
                 id='newsletter-email'
               >
