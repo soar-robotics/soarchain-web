@@ -17,6 +17,7 @@
 
 @import 'pages/explore/users';
 @import 'pages/explore/business';
+@import 'pages/explore/investors';
 
 html,
 body {
@@ -189,6 +190,7 @@ header {
   @include media-breakpoint-down(md) {
     background: $dark-blue;
     padding-bottom: 0;
+    border-bottom: 3px solid $purple;
   }
 }
 
