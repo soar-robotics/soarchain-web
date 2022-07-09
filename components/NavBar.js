@@ -21,7 +21,7 @@ const NavBar = () => {
                   <NavDropdown.Header>Industries</NavDropdown.Header>
                   <NavDropdown.Item
                     className='text-capitalize'
-                    href='/solutions/mobility-and-connectivity'
+                    href='/solutions/mobility-connectivity'
                   >
                     mobility and connectivity
                   </NavDropdown.Item>
