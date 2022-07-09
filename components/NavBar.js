@@ -35,7 +35,7 @@ const NavBar = () => {
                     application ecosystem
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/solutions/lightpaper'>
-                    lightpaper (coming soon)
+                    lightpaper <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                 </div>
                 <div>
@@ -48,7 +48,7 @@ const NavBar = () => {
                     motus
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/solutions/roadmap'>
-                    roadmap (coming soon)
+                    roadmap <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const NavBar = () => {
                     users
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
-                    Developers (coming soon)
+                    Developers <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/business'>
                     Business
@@ -74,14 +74,11 @@ const NavBar = () => {
                 <div>
                   <NavDropdown.Header>Soarchain</NavDropdown.Header>
 
-                  <NavDropdown.Item className='text-capitalize' href='/explore/what-is-soarchain'>
-                    what is soarchain
-                  </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
-                    soarcoin (coming soon)
+                    soar coin <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
-                    buy soarcoin (coming soon)
+                    buy soar coin <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                 </div>
               </div>
