@@ -2,7 +2,7 @@ import { mobilityConnectivityAspects } from '../../utils/context/mobilityConnect
 
 function MobilityConnectivity() {
   return (
-    <main className='mobility'>
+    <main id='mobility'>
       <section className='showcase'>
         <div className='container'>
           <span className='text-title'>Vehicle connectivity</span>

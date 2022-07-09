@@ -8,7 +8,7 @@ function Motus() {
   const [navIndex, setNavIndex] = useState(1);
 
   return (
-    <main className='motus'>
+    <main id='motus'>
       <section className='showcase'>
         <div className='container d-flex'>
           <div className='content'>

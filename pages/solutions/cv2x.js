@@ -3,7 +3,7 @@ import { cv2xApplications, cv2xFeatures } from '../../utils/context/cv2x';
 
 function Cv2x() {
   return (
-    <main className='cv2x'>
+    <main id='cv2x'>
       <section className='showcase'>
         <div className='container'>
           <span className='text-title'>
@@ -14,12 +14,14 @@ function Cv2x() {
               <p key={index}>{item}</p>
             ))}
           </div>
-          
         </div>
       </section>
-      <section className="applications">
-        <div className="container">
-            <Tree title='Through its instant communication V2X allows road safety applications such as' context={cv2xApplications}/>
+      <section className='applications'>
+        <div className='container'>
+          <Tree
+            title='Through its instant communication V2X allows road safety applications such as'
+            context={cv2xApplications}
+          />
         </div>
       </section>
     </main>

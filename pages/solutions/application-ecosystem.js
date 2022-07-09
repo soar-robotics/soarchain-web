@@ -3,7 +3,7 @@ import { motusUseCases } from '../../utils/context/motusContext';
 
 function ApplicationEcosystem() {
   return (
-    <section className='application-ecosystem'>
+    <section id='application-ecosystem'>
       <div className='showcase'>
         <div className='container'>
           <p className='text-title text-center'>

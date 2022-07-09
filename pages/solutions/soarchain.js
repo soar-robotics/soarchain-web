@@ -1,6 +1,6 @@
 function Soarchain() {
   return (
-    <main className='soarchain'>
+    <main id='soarchain'>
       <section className='showcase'>
         <div className='container'>
           <div className='showcase-content showcase-content-right'>

@@ -13,7 +13,7 @@ export default function Home() {
   }
   return (
     <div className='app'>
-      <main className='home'>
+      <main id='home'>
         <section className='showcase'>
           <div className='container position-relative'>
             <div className='texts mx-auto position-relative pt-5'>
