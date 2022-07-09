@@ -1,0 +1,45 @@
+.tree {
+  &-list {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: $purple;
+      left: calc(50% - 2px);
+      top: 0;
+      content: '';
+    }
+
+    &-item-left {
+      display: block;
+      margin-bottom: 2rem;
+      position: relative;
+      width: 50%;
+      padding-right: 50px;
+
+      &::after {
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background: $purple;
+        top: calc(50% - 2px);
+        right: 1px;
+        content: '';
+      }
+    }
+
+    &-item-right {
+      @extend .tree-list-item-left;
+
+      margin-left: auto;
+      padding-right: 0px;
+      padding-left: 50px;
+
+      &::after {
+        left: -1px;
+      }
+    }
+  }
+}

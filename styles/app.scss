@@ -2,14 +2,18 @@
 
 @import 'bootstrap-custom';
 @import 'spacings';
+
 @import 'var/colors';
 @import 'var/sizing';
+
+@import 'components/tree';
 
 @import 'pages/home';
 @import 'pages/solutions/soarchain';
 @import 'pages/solutions/motus';
 @import 'pages/solutions/application-ecosystem';
 @import 'pages/solutions/mobility-connectivity';
+@import 'pages/solutions/cv2x';
 
 html,
 body {

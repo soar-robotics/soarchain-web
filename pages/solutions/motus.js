@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { Btn } from '../../components/Btn';
+import Tree from '../../components/Tree';
 import { motusMainFeatures, motusOverview, motusTechSpecs } from '../../utils/context/motusContext';
 
 function Motus() {
@@ -19,27 +20,15 @@ function Motus() {
               open-source connectivity modules with V2V, V2N, V2P and V2X capabilities.
               <br />
               <br />
-              The system is designed to fit different vehicles and user configurations such as 4-wheelers,
-              2-wheelers, pedestrians, micromobility, Road-side units.
+              The system is designed to fit different vehicles and user configurations such as
+              4-wheelers, 2-wheelers, pedestrians, micromobility, Road-side units.
             </p>
             <Btn href='#' text='pre-order now' className='mt-4' />
           </div>
         </div>
       </section>
       <section className='features'>
-        <div className='container'>
-          <p className='text-title text-center'>Main features</p>
-          <div className='features-list mt-5'>
-            {motusMainFeatures.map((item, index) => (
-              <span
-                key={index}
-                className={`features-list-item-${index % 2 === 0 ? 'left' : 'right'}`}
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
+        <Tree title='Main features' context={motusMainFeatures} />
       </section>
 
       <section className='specs'>
