@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import { Shield } from 'react-feather';
-
 export const showcaseSliderContext = [
   {
     title: 'Securing the data',

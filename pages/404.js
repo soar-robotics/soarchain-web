@@ -5,7 +5,7 @@ function NotFound() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('/solutions/motus');
+    router.replace('/');
   });
 
   return null;
