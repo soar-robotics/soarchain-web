@@ -74,7 +74,7 @@ export const ExploreSlider = ({ ...rest }) => {
             <span className='display-6 fw-bold m-0'>{item.title}</span>
             <div className='separator'></div>
             <span>{item.description}</span>
-            <Link href='#'>
+            <Link href='/solutions/soarchain'>
               <a className='btn btn-primary py-2 px-5 text-uppercase text-white'>
                 <small>learn more</small>
               </a>

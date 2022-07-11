@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Link href='#'>
+            <Link href='/solutions/motus'>
               <a type='button' className='btn btn-outline-light text-uppercase py-2 px-5'>
                 <small>learn more</small>
               </a>
