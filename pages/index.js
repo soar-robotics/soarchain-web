@@ -1,16 +1,9 @@
 import Link from 'next/link';
-import { useState } from 'react';
 
-import Form from '../components/Form';
 import { ExploreSlider, ShowcaseSlider } from '../components/Slider';
 import { motusExploreItems } from '../utils/context/motusContext';
 
 export default function Home() {
-  const [isAuth, setIsAuth] = useState(false);
-
-  if (!isAuth) {
-    return <Form setIsAuth={setIsAuth} />;
-  }
   return (
     <div className='app'>
       <main id='home'>
