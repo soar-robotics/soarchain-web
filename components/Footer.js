@@ -16,8 +16,8 @@ const Footer = () => {
           <div className='d-flex flex-column mt-auto'>
             <span className='title'>Address</span>
             <span>Soarchain</span>
-            <span>Pappelallee 78/79</span>
-            <span>10437 Los Angeles</span>
+            <span>8605 Santa Monica Boulevard</span>
+            <span>West Hollywood, CA</span>
             <span>USA</span>
           </div>
         </div>
