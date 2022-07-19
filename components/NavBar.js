@@ -94,10 +94,10 @@ const NavBar = () => {
                   {/* <NavDropdown.Header>Connect</NavDropdown.Header> */}
 
                   <NavDropdown.Item className='text-capitalize' href='/develop/consensus'>
-                    proof-of-availability
+                    proof-of-availability <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/connect/become-validator'>
-                    become a validator
+                    become a validator <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                 </div>
               </div>
@@ -112,21 +112,21 @@ const NavBar = () => {
                 <div className='w-100'>
                   {/* <NavDropdown.Header>Connect</NavDropdown.Header> */}
 
-                  <NavDropdown.Item className='text-capitalize' href='/connect/team'>
+                  {/* <NavDropdown.Item className='text-capitalize' href='/connect/team'>
                     team
-                  </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/connect/community'>
+                  </NavDropdown.Item> */}
+                  {/* <NavDropdown.Item className='text-capitalize' href='/connect/community'>
                     community
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/connect/business'>
                     socials
+                  </NavDropdown.Item>  */}
+                  <NavDropdown.Item className='text-capitalize' href='/connect/about-us'>
+                    About Us
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/connect/investors'>
-                    partners
-                  </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/connect/news'>
+                  {/* <NavDropdown.Item className='text-capitalize' href='/connect/news'>
                     news
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                 </div>
               </div>
             </NavDropdown>
