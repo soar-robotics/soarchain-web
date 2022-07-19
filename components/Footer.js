@@ -27,16 +27,16 @@ const Footer = () => {
             <div className='d-flex flex-column pe-4 me-4 border-end'>
               <span className='title'>quick start</span>
               <Link href='/explore/users'>Users</Link>
-              <Link href='/explore/developers'>Developers</Link>
-              <Link href='/explore/business'>Business</Link>
+{/*               <Link href='/explore/developers'>Developers</Link>
+ */}              <Link href='/explore/business'>Business</Link>
               <Link href='/explore/investors'>Investors</Link>
             </div>
             <div className='d-flex flex-column'>
               <span className='title'>soarchain</span>
-              <Link href='/explore/what-is-soarchain'>What is Soarchain</Link>
-              <Link href='/explore/srx'>SRX</Link>
-              <Link href='/explore/buy-srx'>Buy SRX</Link>
-              <Link href='/explore/motus'>MOTUS</Link>
+              <Link href='/solutions/soarchain'>What is Soarchain</Link>
+{/*               <Link href='/explore/srx'>SRX</Link>
+              <Link href='/explore/buy-srx'>Buy SRX</Link> */}
+              <Link href='/solutions/motus'>MOTUS</Link>
             </div>
           </div>
           <small className='mt-auto'>

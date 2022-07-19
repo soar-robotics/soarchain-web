@@ -14,7 +14,7 @@ export const solutionsList = [
     ),
   },
   {
-    title: 'Artificial Intelligence',
+    title: 'Artificial Intelligence', 
     icon: (
       <Cpu size={solutionsIcons.size} strokeWidth={solutionsIcons.stroke} className='text-purple' />
     ),

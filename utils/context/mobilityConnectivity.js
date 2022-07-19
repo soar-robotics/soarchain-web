@@ -12,13 +12,13 @@ export const mobilityConnectivityAspects = [
         </p>
 
         <small>
-          - Vehicles are getting equipped with more sensors with higher levels of sophistication and
+           Vehicles are getting equipped with more sensors with higher levels of sophistication and
           optimization.
-          <br /> - ADAS (Advanced driver-assistance system) are getting better at assisted driving,
+          <br />  ADAS (Advanced driver-assistance system) are getting better at assisted driving,
           leading the way to higher levels of automation with a goal to reach fully autonomous
           driving.
-          <br />- A group of cars in an urban environment literally forms a community.
-          <br />- In a well-functioning and efficient community, communication between the
+          <br /> A group of cars in an urban environment literally forms a community.
+          <br /> In a well-functioning and efficient community, communication between the
           participants is of utmost importance.
         </small>
       </div>
@@ -49,12 +49,12 @@ export const mobilityConnectivityAspects = [
         </p>
 
         <small>
-          - Traffic accidents kill more than 1.25 million people around the world each year. Beside
+           Traffic accidents kill more than 1.25 million people around the world each year. Beside
           the lives lost, these accidents take a huge economic toll, with so much human potential
           being lost.
-          <br /> - According to the NHTSA, connected cars could prevent up to 80% of multi-vehicle
+          <br />  According to the NHTSA, connected cars could prevent up to 80% of multi-vehicle
           crashes.
-          <br />- V2X technology will drastically decrease the frequency of traffic accidents and
+          <br /> V2X technology will drastically decrease the frequency of traffic accidents and
           the money wasted on them.
         </small>
       </div>
@@ -64,11 +64,11 @@ export const mobilityConnectivityAspects = [
     title: 'Sustainability',
     description: (
       <small>
-        - Roads that are safer are less congested. Lowering congestion reduces CO2 emissions.
-        <br /> - Cooperative driving reduces accelerations and travel times.
-        <br />- The protection of micro mobility users provided by V2X would encourage the use of
+         Roads that are safer are less congested. Lowering congestion reduces CO2 emissions.
+        <br />  Cooperative driving reduces accelerations and travel times.
+        <br /> The protection of micro mobility users provided by V2X would encourage the use of
         these technologies.
-        <br />- According to 5GAA, it is possible to reduce carbon emissions by 45% when V2X is
+        <br /> According to 5GAA, it is possible to reduce carbon emissions by 45% when V2X is
         utilized in vehicles
       </small>
     ),
