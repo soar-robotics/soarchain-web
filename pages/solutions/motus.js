@@ -23,8 +23,8 @@ function Motus() {
               The system is designed to fit different vehicles and user configurations such as
               4-wheelers, 2-wheelers, pedestrians, micromobility, Road-side units.
             </p>
-            <Btn href='#' text='pre-order now' className='mt-4' />
-          </div>
+{/*             <Btn href='#' text='pre-order now' className='mt-4' />
+ */}          </div>
         </div>
       </section>
       <section className='features'>
