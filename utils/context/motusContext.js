@@ -26,9 +26,9 @@ export const motusUseCases = [
         Real time weather & hazard notifications
         <br />
         Automatic emergency calls (eCall)
-        <br /> 
+        <br />
         Roadside assistance and medical emergencies
-        <br /> 
+        <br />
         Driver-assist features & skills improvement Safe city intelligence system
       </p>
     ),
@@ -44,7 +44,6 @@ export const motusUseCases = [
         Remote driving features
         <br /> Behavioral assistance
         <br /> Autonomous vehicle simulation & risk management
-
       </p>
     ),
   },
@@ -53,15 +52,12 @@ export const motusUseCases = [
     description: (
       <p>
         Traffic flow assistance
-
         <br />
         Urban planning
         <br />
         Parking services
         <br /> Automated road toll collection
-
         <br /> Intelligent road infrastructure
-
       </p>
     ),
   },
@@ -70,14 +66,11 @@ export const motusUseCases = [
     description: (
       <p>
         Audio and video content
-
         <br />
-        In-car VR and AR experiences        <br />
+        In-car VR and AR experiences <br />
         Social media interaction
         <br /> Interactive & geolocated advertising
-
         <br /> Office and productivity solutions
-
       </p>
     ),
   },
@@ -90,10 +83,9 @@ export const motusUseCases = [
         Pay-as-you-drive
         <br />
         Pay-how-you-drive
-        <br />Intelligent insurance risk assessment
-
+        <br />
+        Intelligent insurance risk assessment
         <br /> Vehicle usage monitoring and scoring
-
       </p>
     ),
   },
@@ -107,7 +99,6 @@ export const motusUseCases = [
         <br />
         Wear and tear analytics
         <br /> Supplier performance scorecard
-
       </p>
     ),
   },
@@ -121,9 +112,7 @@ export const motusUseCases = [
         <br />
         Business advisory services
         <br /> Concierge services
-
-        <br /> In-car offerings and targeted  tailored advertising
-
+        <br /> In-car offerings and targeted tailored advertising
       </p>
     ),
   },
@@ -131,12 +120,11 @@ export const motusUseCases = [
     title: 'Charging / Energy',
     description: (
       <p>
-Charging station planning and deployment
+        Charging station planning and deployment
         <br />
         Energy usage analysis
         <br />
         Charging station locator and offerings
-
       </p>
     ),
   },
@@ -150,9 +138,7 @@ Charging station planning and deployment
         <br />
         Efficient logistics transportation
         <br /> Concierge services
-
-        <br /> In-car offerings and targeted  tailored advertising
-
+        <br /> In-car offerings and targeted tailored advertising
       </p>
     ),
   },
@@ -166,11 +152,7 @@ Charging station planning and deployment
         <br />
         State safety tests
         <br /> State emission tests
-
-
         <br /> Predictive failure warning
-
-
       </p>
     ),
   },
@@ -184,8 +166,6 @@ Charging station planning and deployment
         <br />
         Operational efficiency
         <br /> Intelligent navigation
-
-
       </p>
     ),
   },
@@ -206,7 +186,7 @@ Charging station planning and deployment
 export const motusOverview = [
   {
     title: 'Overview',
-    image: <Image alt='motus' src='/motus/front.png' width={1600} height={899} />,
+    image: <Image alt='motus' src='/motus/front-white.png' width={690} height={552} />,
     description: (
       <p>
         - Receive and transfer different kinds of V2X messages through PC5 <br />

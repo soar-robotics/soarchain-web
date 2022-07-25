@@ -81,6 +81,16 @@ a {
         background-color: $dark-blue;
       }
     }
+    &-white {
+      color: white;
+      border-color: white;
+
+      // &:hover,
+      // &:active {
+      //   color: white;
+      //   background-color: white;
+      // }
+    }
   }
 }
 

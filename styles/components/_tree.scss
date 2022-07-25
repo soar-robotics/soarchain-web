@@ -43,3 +43,52 @@
     }
   }
 }
+
+.tree-bullet {
+  &-list {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: lighten($color: $purple, $amount: 15%);
+      left: calc(50% - 2px);
+      top: 0;
+      z-index: 1;
+      content: '';
+    }
+
+    &-item-left {
+      display: block;
+      margin-bottom: 2rem;
+      position: relative;
+      width: 50%;
+      padding-right: 50px;
+
+      &::after {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: $dark-purple;
+        top: calc(50% - 2px);
+        right: -6.5px;
+        z-index: 2;
+        content: '';
+      }
+    }
+
+    &-item-right {
+      @extend .tree-bullet-list-item-left;
+
+      margin-left: auto;
+      padding-right: 0px;
+      padding-left: 50px;
+
+      &::after {
+        left: -8.5px;
+      }
+    }
+  }
+}
