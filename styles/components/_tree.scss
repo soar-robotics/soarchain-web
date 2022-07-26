@@ -44,6 +44,40 @@
   }
 }
 
+.tree-right {
+  &-list {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 2px;
+      height: calc(100% - 24px);
+      background: $dark-purple;
+      left: 0;
+      top: 0;
+      content: '';
+    }
+
+    &-item {
+      display: block;
+      margin-bottom: 2rem;
+      position: relative;
+      width: 100%;
+      padding-left: 50px;
+
+      &::after {
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background: $dark-purple;
+        top: calc(50% - 2px);
+        left: 0px;
+        content: '';
+      }
+    }
+  }
+}
+
 .tree-bullet {
   &-list {
     position: relative;

@@ -185,17 +185,6 @@ export const motusUseCases = [
 
 export const motusOverview = [
   {
-    title: 'Overview',
-    image: <Image alt='motus' src='/motus/front-white.png' width={690} height={552} />,
-    description: (
-      <p>
-        - Receive and transfer different kinds of V2X messages through PC5 <br />
-        - Your identity is safe and your privacy is not invaded. <br />
-        - Use whenever and wherever you like <br />- Track your rewards from the Soar Mobile App
-      </p>
-    ),
-  },
-  {
     title: 'Earn while Driving',
     // image: <Image alt='srx' src='/srx/logo.png' width={675} height={510} />,
     description: (
@@ -229,51 +218,40 @@ export const motusOverview = [
   },
 ];
 
-export const motusTechSpecs = [
-  {
-    title: 'core',
-    specs: ['1.8GHz 4-Core ARM Processor', '4 GB LPDDR4', '128 GB eMMC'],
-  },
-  {
-    title: 'sensors',
-    specs: [
-      '9DOF MEMS',
-      'Trusted Platform Module (TPM)',
-      'Hardware Security Module (HSM)',
-      'Temperature Sensor',
-      'Air Pressure Sensor',
-      'Air Quality Sensor',
-      'Humidity Sensor',
-      'RTC and Cell Battery',
-    ],
-  },
-  {
-    title: 'interfaces & connectivity',
-    specs: [
-      '2 x USB Host',
-      'USB Serial',
-      'MicroSD',
-      'SIM Card',
-      '8 x GPIO',
-      '4 x ADC',
-      'Display Support',
-      'CV2X',
-      'GNSS',
-      'LTE up to Cat 16',
-      'Wi-Fi 6 802.11 a/b/g/n/ac/ax',
-      'BT 5.1',
-      'CAN FD',
-      'KLine/LIN Interface*',
-      'Ethernet (10/100 Mbps)',
-      'MODBUS (RS485, RS422)',
-    ],
-  },
-  {
-    title: 'power',
-    specs: ['Input Voltage Range : 12-36V', 'Battery (Li-Poly, 5000mAh+)'],
-  },
-  {
-    title: 'mechanical',
-    specs: ['Dimensions : 203,12 x 84,0 x 44,53mm', 'Tamper Detection', 'IPC Certificate'],
-  },
-];
+export const motusTechSpecs = {
+  core: ['1.8GHz 4-Core ARM Processor', '4 GB LPDDR4', '128 GB eMMC'],
+
+  sensors: [
+    '9DOF MEMS',
+    'Trusted Platform Module (TPM)',
+    'Hardware Security Module (HSM)',
+    'Temperature Sensor',
+    'Air Pressure Sensor',
+    'Air Quality Sensor',
+    'Humidity Sensor',
+    'RTC and Cell Battery',
+  ],
+
+  interfaces: [
+    '2 x USB Host',
+    'USB Serial',
+    'MicroSD',
+    'SIM Card',
+    '8 x GPIO',
+    '4 x ADC',
+    'Display Support',
+    'CV2X',
+    'GNSS',
+    'LTE up to Cat 16',
+    'Wi-Fi 6 802.11 a/b/g/n/ac/ax',
+    'BT 5.1',
+    'CAN FD',
+    'KLine/LIN Interface*',
+    'Ethernet (10/100 Mbps)',
+    'MODBUS (RS485, RS422)',
+  ],
+
+  power: ['Input Voltage Range : 12-36V', 'Battery (Li-Poly, 5000mAh+)'],
+
+  mechanical: ['Dimensions : 203,12 x 84,0 x 44,53mm', 'Tamper Detection', 'IPC Certificate'],
+};
