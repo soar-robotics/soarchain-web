@@ -57,7 +57,7 @@ export default function Home() {
 
         <section className='explore'>
           <div className='container position-relative py-5'>
-            <h5 className='text-center text-primary text-uppercase fw-bold'>soarchain is</h5>
+            <h5 className='text-center text-purple text-uppercase fw-bold'>soarchain is</h5>
             <ExploreSlider />
           </div>
         </section>

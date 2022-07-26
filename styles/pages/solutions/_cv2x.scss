@@ -1,28 +1,12 @@
 #cv2x {
   .showcase {
-    background: url('/cv2x/cv2x.png') no-repeat center/cover;
-    padding: 10rem 0 5rem 0;
+    background: url('/background/background-4.png') no-repeat center/cover;
+    padding: 10rem 0;
     position: relative;
 
     .container {
       position: relative;
       z-index: 2;
     }
-
-    &::after {
-      width: 100%;
-      height: 100%;
-      content: '';
-      top: 0;
-      left: 0;
-      background: rgba($color: #000000, $alpha: 0.7);
-      position: absolute;
-      z-index: 1;
-    }
-  }
-
-  .applications {
-    padding: 5rem 0;
-    color: $dark-blue;
   }
 }
