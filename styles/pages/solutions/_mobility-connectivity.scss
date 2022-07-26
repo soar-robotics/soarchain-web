@@ -1,7 +1,28 @@
 #mobility {
   .showcase {
-    background: $dark-blue;
+    background: url('/background/background-3.png') center/cover no-repeat;
+
     padding: 10rem 0;
+    text-align: justify;
+    text-align-last: center;
+
+    .container {
+      max-width: 500px;
+    }
+  }
+
+  .softwarization {
+    padding: 5rem 0;
+    color: $dark-blue;
+    background-color: $light-gray;
+    background-image: url('/mobility/car.png');
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(md) {
+      background-image: none;
+    }
   }
 
   .aspects {

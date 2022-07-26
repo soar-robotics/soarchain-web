@@ -23,15 +23,10 @@ function ApplicationEcosystem() {
       </section>
 
       <section className='features'>
-        <div class='container'>
+        <div className='container'>
           <div className='tree-list mt-5'>
             {motusUseCases.map((item, index) => (
-              <div
-                key={index}
-                className={`tree-list-item-${
-                  index % 2 === 0 ? 'left' : 'right'
-                }`}
-              >
+              <div key={index} className={`tree-list-item-${index % 2 === 0 ? 'left' : 'right'}`}>
                 <h4 className='fw-bold'>{item.title}</h4>
                 <small>{item.description}</small>
               </div>
