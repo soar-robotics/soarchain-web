@@ -1,6 +1,6 @@
 #application-ecosystem {
   .showcase {
-    background: $dark-blue;
+    background: url('/background/background-2.png') center/cover;
     padding: 10rem 0 5rem 0;
 
     &-image {
@@ -11,8 +11,6 @@
         width: 100%;
       }
     }
-
-    
   }
 
   .features {
