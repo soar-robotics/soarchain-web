@@ -1,42 +1,20 @@
-import { Shield, Cast, Cloud, Cpu } from 'react-feather';
-
-const solutionsIcons = { size: 120, stroke: 1 };
+import Image from 'next/image';
 
 export const solutionsList = [
   {
     title: 'Safety & Emergency',
-    icon: (
-      <Shield
-        size={solutionsIcons.size}
-        strokeWidth={solutionsIcons.stroke}
-        className='text-purple'
-      />
-    ),
+    icon: <Image alt='safety' src='/icon/shield.png' width={144} height={185} />,
   },
   {
-    title: 'Artificial Intelligence', 
-    icon: (
-      <Cpu size={solutionsIcons.size} strokeWidth={solutionsIcons.stroke} className='text-purple' />
-    ),
+    title: 'Artificial Intelligence',
+    icon: <Image alt='intelligence' src='/icon/cpu.png' width={187} height={187} />,
   },
   {
     title: 'Smart City',
-    icon: (
-      <Cloud
-        size={solutionsIcons.size}
-        strokeWidth={solutionsIcons.stroke}
-        className='text-purple'
-      />
-    ),
+    icon: <Image alt='smart-city' src='/icon/smart-city.png' width={159} height={181} />,
   },
   {
     title: 'Advertisement',
-    icon: (
-      <Cast
-        size={solutionsIcons.size}
-        strokeWidth={solutionsIcons.stroke}
-        className='text-purple'
-      />
-    ),
+    icon: <Image alt='advertisement' src='/icon/advertisement.png' width={159} height={181} />,
   },
 ];

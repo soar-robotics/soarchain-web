@@ -1,16 +1,17 @@
 #investors {
   .showcase {
-    background: $dark-blue;
-    padding: 10rem 0 5rem 0;
+    background: url('/background/background-8.png') no-repeat center/cover;
+    padding: 12rem 0;
+  }
+
+  .ecosystem {
+    background: linear-gradient(to right, #bc1a8a, $dark-purple);
+    z-index: 2;
+    position: relative;
   }
 
   .partners {
     color: $dark-blue;
-    padding: 5rem 0;
-  }
-
-  .applications {
-    background: $dark-blue;
     padding: 5rem 0;
   }
 }

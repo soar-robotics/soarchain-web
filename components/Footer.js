@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='container'>
       <div className='row align-items-center'>
         <div className='col col-md-4 d-flex flex-column'>
-          <div>
+          <div className='w-50'>
             <Link href={'/'}>
               <Image alt='soarchain' src='/logo/text-hollow.png' width={216} height={68} />
             </Link>
@@ -27,14 +27,15 @@ const Footer = () => {
             <div className='d-flex flex-column pe-4 me-4 border-end'>
               <span className='title'>quick start</span>
               <Link href='/explore/users'>Users</Link>
-{/*               <Link href='/explore/developers'>Developers</Link>
- */}              <Link href='/explore/business'>Business</Link>
+              {/*               <Link href='/explore/developers'>Developers</Link>
+               */}{' '}
+              <Link href='/explore/business'>Business</Link>
               <Link href='/explore/investors'>Investors</Link>
             </div>
             <div className='d-flex flex-column'>
               <span className='title'>soarchain</span>
               <Link href='/solutions/soarchain'>What is Soarchain</Link>
-{/*               <Link href='/explore/srx'>SRX</Link>
+              {/*               <Link href='/explore/srx'>SRX</Link>
               <Link href='/explore/buy-srx'>Buy SRX</Link> */}
               <Link href='/solutions/motus'>MOTUS</Link>
             </div>
