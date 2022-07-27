@@ -73,24 +73,18 @@ a {
 
   &-outline {
     &-dark {
-      color: $dark-blue;
-      border-color: $dark-blue;
+      color: $dark-purple;
+      border-color: $dark-purple;
 
       &:hover,
       &:active {
         color: white;
-        background-color: $dark-blue;
+        background-color: $dark-purple;
       }
     }
     &-white {
       color: white;
       border-color: white;
-
-      // &:hover,
-      // &:active {
-      //   color: white;
-      //   background-color: white;
-      // }
     }
   }
 }

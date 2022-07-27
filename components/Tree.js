@@ -17,4 +17,17 @@ function Tree({ title, context, bullet = false }) {
   );
 }
 
+export function TreeWave({ context }) {
+  return (
+    <div className='tree-wave'>
+      {context.map((item, index) => (
+        <div key={index} className={`tree-wave-item${index % 2 === 0 ? '-left' : ''}`}>
+          <div className='tree-wave-item-number'>{index + 1}</div>
+          <div className={`tree-wave-item${index % 2 === 0 ? '-left' : ''}-text`}>{item}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default Tree;
