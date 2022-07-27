@@ -167,13 +167,33 @@ header {
   background: linear-gradient($dark-blue, rgba($dark-blue, 0.5), transparent);
   padding-bottom: 2rem;
 
+  .nav-item {
+    padding: 10px;
+  }
+
+  .show {
+    background: white;
+    border-radius: 15px 15px 0 0;
+
+    * {
+      color: $dark-blue !important;
+    }
+  }
+
   .dropdown {
+    &-header {
+      color: $dark-blue;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
     &-menu {
       padding-bottom: 1rem;
-      background: $dark-blue;
-      border-radius: 0;
-      border: solid 1px $purple;
-      transform: translateX(calc(-100% + 90px));
+      color: $dark-blue;
+      border-radius: 15px 0 15px 15px;
+      border-top: none;
+      margin: 0;
+      padding: 20px;
 
       @include media-breakpoint-down(md) {
         border: none;
@@ -183,11 +203,9 @@ header {
     }
 
     &-item {
-      color: white;
-      font-size: 15px;
-
       &:hover {
-        color: $dark-blue;
+        color: $purple !important;
+        background: $light-gray !important;
       }
     }
   }
@@ -196,6 +214,14 @@ header {
     background: $dark-blue;
     padding-bottom: 0;
     border-bottom: 3px solid $purple;
+
+    .show {
+      background: inherit;
+
+      * {
+        color: white !important;
+      }
+    }
   }
 }
 

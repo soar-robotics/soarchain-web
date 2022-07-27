@@ -1,10 +1,24 @@
 import Image from 'next/image';
+import { useState } from 'react';
 
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
+  // const [styles, setStyles] = useState('');
+
+  // if (typeof window !== 'undefined') {
+  //   const navItemWidth = document.querySelector('.show');
+
+  //   console.log(navItemWidth);
+
+  //   setStyles(`.navbar {
+  //   background: red !important;
+  // }`);
+  // }
+
   return (
     <Navbar className='navbar' variant='dark' expand='md'>
+      {/* <style>{styles}</style> */}
       <Container>
         <Navbar.Brand href='/'>
           <Image alt='soarchain' src='/logo/text-solid.png' width={216} height={68} />
@@ -13,6 +27,7 @@ const NavBar = () => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
             <NavDropdown
+              align='end'
               title={<span className='text-white'>Solutions</span>}
               id='solutions-dropdown'
             >
@@ -38,6 +53,13 @@ const NavBar = () => {
                     lightpaper <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                 </div>
+                <div
+                  className='my-auto'
+                  style={{
+                    borderLeft: '3px solid #f5f6fe',
+                    height: '150px',
+                  }}
+                />
                 <div>
                   <NavDropdown.Header>Products</NavDropdown.Header>
 
@@ -53,7 +75,11 @@ const NavBar = () => {
                 </div>
               </div>
             </NavDropdown>
-            <NavDropdown title={<span className='text-white'>Explore</span>} id='explore-dropdown'>
+            <NavDropdown
+              align='end'
+              title={<span className='text-white'>Explore</span>}
+              id='explore-dropdown'
+            >
               <div className='d-md-flex gap-3 pe-3'>
                 <div>
                   <NavDropdown.Header>Quick Start</NavDropdown.Header>
@@ -71,6 +97,13 @@ const NavBar = () => {
                     Investors
                   </NavDropdown.Item>
                 </div>
+                <div
+                  className='my-auto'
+                  style={{
+                    borderLeft: '3px solid #f5f6fe',
+                    height: '150px',
+                  }}
+                />
                 <div>
                   <NavDropdown.Header>Soarchain</NavDropdown.Header>
 
@@ -84,6 +117,7 @@ const NavBar = () => {
               </div>
             </NavDropdown>
             <NavDropdown
+              align='end'
               dir
               title={<span className='text-white'>Develop</span>}
               menuVariant='horizontal'
@@ -103,6 +137,7 @@ const NavBar = () => {
               </div>
             </NavDropdown>
             <NavDropdown
+              align='end'
               dir
               title={<span className='text-white'>Connect</span>}
               menuVariant='horizontal'
