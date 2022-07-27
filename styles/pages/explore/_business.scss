@@ -1,15 +1,34 @@
 #business {
   .showcase {
-    background: $dark-blue;
+    background: url('/background/background-7.png') no-repeat center/cover;
     padding: 10rem 0 5rem 0;
+    position: relative;
+
+    .container {
+      position: relative;
+      z-index: 3;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      background: rgba($color: #000000, $alpha: 0.2);
+      z-index: 1;
+    }
   }
 
-  .applications {
-    padding: 5rem 0;
+  .ecosystem {
+    background: linear-gradient(to right, #bc1a8a, $dark-purple);
+    z-index: 2;
+    position: relative;
   }
 
   .cv2x {
-    background: $dark-blue;
+    color: $dark-blue;
     padding: 5rem 0;
   }
 }
