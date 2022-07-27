@@ -29,7 +29,7 @@ function Users() {
             </div>
 
             <div className='col col-md-6'>
-              <Image alt='motus' src='/motus/front-white.png' width={690} height={552} />
+              <Image alt='motus' src='/motus/front.png' width={690} height={552} />
             </div>
           </div>
         </div>

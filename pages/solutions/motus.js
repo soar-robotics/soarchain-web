@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
 
-import { Btn } from '../../components/Btn';
-import Tree from '../../components/Tree';
 import { motusMainFeatures, motusOverview, motusTechSpecs } from '../../utils/context/motusContext';
 
 function Motus() {
@@ -28,7 +26,7 @@ function Motus() {
                */}{' '}
             </div>
             <div className='col-md-7 d-flex align-items-center'>
-              <Image alt='motus' src='/motus/front-white.png' width={690} height={552} />
+              <Image alt='motus' src='/motus/front.png' width={690} height={552} />
             </div>
           </div>
 
