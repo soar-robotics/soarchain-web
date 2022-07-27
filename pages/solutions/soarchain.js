@@ -3,21 +3,19 @@ function Soarchain() {
     <main id='soarchain'>
       <section className='showcase'>
         <div className='container'>
-          <div className='showcase-content showcase-content-right'>
-            <h5 className='text-purple text-uppercase fw-bold'>soarchain is</h5>
+          <div className='showcase-header text-center'>
+            <h5 className='text-pink text-uppercase fw-bold'>soarchain is</h5>
 
-            <span className='text-title'>
-              A communication <br /> layer for mobility
-            </span>
+            <h2 className='fw-bold'>A communication layer for mobility</h2>
             <p className='mt-3'>
               With utilizing celular vehicle to everything technology, we bring connected vehicles.
             </p>
           </div>
-          <div className='showcase-content showcase-content-left'>
-            <h5 className='text-purple text-uppercase fw-bold d-none d-md-block'>soarchain is</h5>
-            <span className='text-title'>
+          <div className='showcase-content showcase-content-right'>
+            <h5 className='text-pink text-uppercase fw-bold d-none d-md-block'>soarchain is</h5>
+            <h2 className='fw-bold'>
               Decentralized connectivity layer for real-time transactions between vehicles
-            </span>
+            </h2>
             <p className='mt-3'>
               We offer a trustless, permissionless, decentralized and distributed way to enable
               connectivity between vehicles. <br />

@@ -1,17 +1,22 @@
 #soarchain {
   .showcase {
-    background: $dark-blue;
+    background: url('/background/background-5.png') center/cover no-repeat;
     padding-top: 10rem;
     padding-bottom: 10rem;
     position: relative;
 
+    &-header {
+      position: relative;
+      z-index: 3;
+    }
+
     &::after {
-      width: 30%;
-      max-width: 600px;
+      width: 45%;
+      max-width: 850px;
       height: 50%;
       position: absolute;
-      left: 7%;
-      top: 12%;
+      left: 2%;
+      top: 400px;
       background: url('/pages/solutions/soarchain/showcase-graphics.png') no-repeat;
       background-position: top left;
       background-size: contain;
@@ -27,35 +32,49 @@
         margin: 0 auto;
       }
     }
-    &::before {
-      width: 30%;
-      max-width: 600px;
-      height: 50%;
-      position: absolute;
-      right: 7%;
-      top: 45%;
-      background: url('/pages/solutions/soarchain/showcase-graphics-2.png') no-repeat;
-      background-position: top right;
-      background-size: contain;
-      content: '';
-      z-index: 2;
 
-      @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(md) {
+      &::before {
         width: 100%;
-        max-width: 100%;
         height: 100%;
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
+        background: rgba($color: #000000, $alpha: 0.6);
         content: '';
-        background: rgba($color: #000000, $alpha: 0.65) center/cover;
+        z-index: 2;
       }
     }
+    // &::before {
+    //   width: 30%;
+    //   max-width: 600px;
+    //   height: 50%;
+    //   position: absolute;
+    //   right: 7%;
+    //   top: 45%;
+    //   background: url('/pages/solutions/soarchain/showcase-graphics-2.png') no-repeat;
+    //   background-position: top right;
+    //   background-size: contain;
+    //   content: '';
+    //   z-index: 2;
+
+    //   @include media-breakpoint-down(md) {
+    //     width: 100%;
+    //     max-width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     content: '';
+    //     background: rgba($color: #000000, $alpha: 0.65) center/cover;
+    //   }
+    // }
 
     &-content {
-      width: 60%;
+      width: 50%;
       z-index: 5;
       position: relative;
+      margin-top: 150px;
 
       &-right {
         margin-left: auto;
