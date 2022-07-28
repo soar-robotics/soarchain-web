@@ -51,7 +51,7 @@
     &::after {
       position: absolute;
       width: 2px;
-      height: calc(100% - 24px);
+      height: 100%;
       background: $dark-purple;
       left: 0;
       top: 0;
@@ -132,6 +132,10 @@
   background-size: auto 90%;
   padding-top: 50px;
 
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+  }
+
   &-item {
     display: flex;
     gap: 1rem;
@@ -140,6 +144,10 @@
     margin-bottom: 1rem;
     margin-left: auto;
     padding-left: 2rem;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 1rem;
+    }
 
     &-number {
       background: white;
@@ -165,10 +173,18 @@
       padding-right: 2rem;
       margin-left: unset;
 
+      @include media-breakpoint-down(md) {
+        padding-right: 1rem;
+      }
+
       &-text {
         @extend .tree-wave-item-text;
 
         text-align: right;
+
+        @include media-breakpoint-down(md) {
+          text-align: left;
+        }
       }
     }
   }

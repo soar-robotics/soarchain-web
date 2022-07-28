@@ -71,7 +71,7 @@ export const ExploreSlider = ({ ...rest }) => {
       {exploreSliderContext.map((item, index) => (
         <Carousel.Item key={index}>
           <div className='d-flex flex-column gap-4 align-items-center w-75 mx-auto text-center'>
-            <span className='text-header m-0'>{item.title}</span>
+            <span className='text-title m-0'>{item.title}</span>
             <div className='separator'></div>
             <span>{item.description}</span>
             <Link href='/solutions/soarchain'>

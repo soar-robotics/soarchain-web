@@ -24,7 +24,7 @@ function ApplicationEcosystem() {
 
       <section className='features'>
         <div className='container'>
-          <div className='tree-list mt-5'>
+          <div className='tree-list'>
             {motusUseCases.map((item, index) => (
               <div key={index} className={`tree-list-item-${index % 2 === 0 ? 'left' : 'right'}`}>
                 <p className='text-medium fw-bold'>{item.title}</p>

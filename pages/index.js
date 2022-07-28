@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { ExploreSlider, ShowcaseSlider } from '../components/Slider';
 import { motusExploreItems } from '../utils/context/motusContext';
+import { Btn } from '../components/Btn';
 
 export default function Home() {
   return (
@@ -50,11 +51,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <Link href='/solutions/application-ecosystem'>
-                    <a type='button' className='btn btn-dark text-uppercase py-2 px-5'>
-                      <small>explore more</small>
-                    </a>
-                  </Link>
+                  <Btn dark href='/solutions/application-ecosystem' text='explore more' />
                 </div>
               </div>
               <div className='showcase-graphics'></div>
@@ -104,11 +101,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div>
-                  <Link href='/solutions/motus'>
-                    <a type='button' className='btn btn-dark text-uppercase py-2 px-5'>
-                      <small>learn more</small>
-                    </a>
-                  </Link>
+                  <Btn dark href='/solutions/motus' text='learn more' />
                 </div>
               </div>
               <div className='col-md-6 mt-5 mt-md-0 d-flex align-items-center'>

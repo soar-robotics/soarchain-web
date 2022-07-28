@@ -23,7 +23,12 @@ function Cv2x() {
                   Through its instant communication V2X allows road safety applications such as
                 </h5>
                 <div className='mx-auto'>
-                  <Tree bullet context={cv2xApplications} />
+                  <Tree
+                    bullet
+                    context={cv2xApplications.map((item, index) => (
+                      <small key={index}>{item}</small>
+                    ))}
+                  />
                 </div>
               </div>
             </div>
