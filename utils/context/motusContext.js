@@ -185,8 +185,11 @@ export const motusUseCases = [
 
 export const motusOverview = [
   {
-    title: 'Earn while Driving',
-    // image: <Image alt='srx' src='/srx/logo.png' width={675} height={510} />,
+    title: (
+      <span>
+        Earn <br /> while Driving
+      </span>
+    ),
     description: (
       <p>
         Transactions between other vehicles are validated by the network and users get rewarded with
@@ -196,8 +199,11 @@ export const motusOverview = [
     ),
   },
   {
-    title: 'Enjoy your Privacy',
-    // image: <Image alt='privacy' src='/lock-graphics.png' width={640} height={640} />,
+    title: (
+      <span>
+        Enjoy <br /> your Privacy
+      </span>
+    ),
     description: (
       <p>
         Your identity is safe with MOTUS, free to choose what to share and what not to. There is no
@@ -206,8 +212,11 @@ export const motusOverview = [
     ),
   },
   {
-    title: 'Ready to use',
-    image: <Image alt='ready-to-use' src='/motus/hand-top.png' width={1920} height={1080} />,
+    title: (
+      <span>
+        Ready <br /> to use
+      </span>
+    ),
     description: (
       <p>
         With plug-and-play design you can connect it to your existing vehicle. MOTUS is compatible

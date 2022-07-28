@@ -9,8 +9,8 @@ function Investors() {
       <section className='showcase'>
         <div className='container'>
           <div className='text-center'>
-            <span className='text-title'>Solutions</span>
-            <p>
+            <span className='text-header-showcase'>Solutions</span>
+            <p className='mt-3'>
               Soarchain offers many possibilities in various sectors and unlocks the business <br />
               potential of novel revenue streams in the mobility space.
             </p>
@@ -31,8 +31,8 @@ function Investors() {
       </section>
 
       <section className='ecosystem'>
-        <div className='container position-relative py-5 d-flex justify-content-center align-items-center gap-5'>
-          <h5 className='text-center text-capitalize fw-bold'>explore application ecosystem</h5>
+        <div className='container position-relative py-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-5'>
+          <span className='text-large text-capitalize fw-bold'>explore application ecosystem</span>
           <div>
             <Link href='/solutions/application-ecosystem'>
               <a className='btn btn-outline-white py-2 px-5 text-uppercase text-white'>
@@ -45,7 +45,7 @@ function Investors() {
 
       <section className='partners'>
         <div className='container'>
-          <h2 className='text-center fw-bold mb-5'>Our partners</h2>
+          <p className='text-title text-center mb-5'>Our partners</p>
           <div>
             <Image
               alt='soarchain-partners'

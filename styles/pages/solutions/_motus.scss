@@ -5,44 +5,12 @@
     background: $light-gray;
 
     .features {
-      position: relative;
-      background: $light-gray;
-      color: $dark-blue;
-      padding: 10rem 0;
-      display: flex;
-      text-align: center;
-
-      &-item {
-        margin-top: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        font-size: 12px;
-        z-index: 2;
-
-        &-point {
-          width: 10px;
-          height: 10px;
-          display: inline-block;
-          border-radius: 50%;
-          background-color: $primary;
-        }
-
-        &-reverse {
-          flex-direction: column-reverse;
-
-          &-text {
-            transform: translateY(calc(-100% - 100px - 10px));
-          }
-        }
-      }
+      padding: 5rem 0;
     }
   }
 
   .specs {
     padding: 5rem 0;
-    // background: $dark-blue;
     color: $dark-blue;
 
     .navigation {
@@ -62,15 +30,16 @@
 
         &.active {
           position: relative;
+          font-weight: 700;
 
           &::after {
             width: 100%;
-            height: 2px;
+            height: 5px;
             position: absolute;
             left: 0;
             bottom: 0;
             content: '';
-            background: $purple;
+            background: $dark-purple;
             transition: width 0.5s ease;
           }
         }

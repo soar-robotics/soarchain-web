@@ -6,7 +6,7 @@ function ApplicationEcosystem() {
     <main id='application-ecosystem'>
       <section className='showcase'>
         <div className='container'>
-          <p className='text-title text-center'>
+          <p className='text-header-showcase text-center'>
             Soarchain unlocks a huge <br /> variety of applications <br />
             and use cases
           </p>
@@ -27,7 +27,7 @@ function ApplicationEcosystem() {
           <div className='tree-list mt-5'>
             {motusUseCases.map((item, index) => (
               <div key={index} className={`tree-list-item-${index % 2 === 0 ? 'left' : 'right'}`}>
-                <h4 className='fw-bold'>{item.title}</h4>
+                <p className='text-medium fw-bold'>{item.title}</p>
                 <small>{item.description}</small>
               </div>
             ))}

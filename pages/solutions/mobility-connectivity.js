@@ -1,15 +1,14 @@
 import Image from 'next/image';
-import { mobilityConnectivityAspects } from '../../utils/context/mobilityConnectivity';
 
 function MobilityConnectivity() {
   return (
     <main id='mobility'>
       <section className='showcase'>
         <div className='container'>
-          <span className='text-title'>
+          <span className='text-header-showcase'>
             Vehicle <br /> connectivity
           </span>
-          <p className='mt-3'>
+          <p className='mt-5'>
             Innovations in automotive connectivity, smart mobility, and the automotive IoT are
             geared toward both better experiences for the consumer and societal good. These
             technologies aim to lower CO2 emissions, enhance transportation efficiency in smart
@@ -22,14 +21,14 @@ function MobilityConnectivity() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 pe-md-5'>
-              <h3 className='fw-bold'>Softwarization of Mobility</h3>
+              <p className='text-title'>Softwarization of Mobility</p>
               <div className='separator mx-auto my-4' />
               <p className='fw-bold'>
                 We see a shift to Software-defined vehicles: The transformation of the vehicles from
                 a product that is mainly hardware-based to a software-centric electronic device on
                 wheels.
               </p>
-              <small>
+              <p>
                 Vehicles are getting equipped with more sensors with higher levels of sophistication
                 and optimization.
                 <br />
@@ -41,7 +40,7 @@ function MobilityConnectivity() {
                 <br />
                 <br /> In a well-functioning and efficient community, communication between the
                 participants is of utmost importance.
-              </small>
+              </p>
             </div>
           </div>
         </div>
@@ -49,12 +48,12 @@ function MobilityConnectivity() {
 
       <section className='aspects'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-md-6 d-flex justify-content-center align-items-center'>
+          <div className='row reverse-row'>
+            <div className='col-md-6 order-2 order-md-1 d-flex justify-content-center align-items-center'>
               <Image alt='traffic' src='/mobility/connectivity.png' width={1140} height={642} />
             </div>
-            <div className='col-md-6 ps-md-5 mt-5 mt-md-0'>
-              <h3 className='fw-bold mb-3'>Smart city</h3>
+            <div className='col-md-6 order-1 order-md-2 ps-md-5 mt-5 mt-md-0'>
+              <p className='text-title'>Smart city</p>
               <p>
                 A smart city is a technologically modern urban area that uses different types of
                 electronic methods, voice activation methods and sensors to collect specific data.
@@ -69,12 +68,12 @@ function MobilityConnectivity() {
 
           <div className='row mt-5'>
             <div className='col-md-5'>
-              <h3 className='fw-bold mb-3'>Traffic Safety</h3>
+              <p className='text-title'>Traffic Safety</p>
               <p className='fw-bold'>
                 With the help of c-v2x emergency and safety apps, MOTUS offers a future with nearly
                 zero accidents.
               </p>
-              <small>
+              <p>
                 Traffic accidents kill more than 1.25 million people around the world each year.
                 Beside the lives lost, these accidents take a huge economic toll, with so much human
                 potential being lost.
@@ -82,7 +81,7 @@ function MobilityConnectivity() {
                 multi-vehicle crashes.
                 <br /> V2X technology will drastically decrease the frequency of traffic accidents
                 and the money wasted on them.
-              </small>
+              </p>
             </div>
             <div className='col-md-2 d-none d-md-block mx-auto'>
               <div
@@ -95,8 +94,8 @@ function MobilityConnectivity() {
               />
             </div>
             <div className='col-md-5'>
-              <h3 className='fw-bold mb-3 mt-3 mt-md-0'>Sustainability</h3>
-              <small>
+              <p className='text-title'>Sustainability</p>
+              <p>
                 Roads that are safer are less congested. Lowering congestion reduces CO2 emissions.
                 <br /> Cooperative driving reduces accelerations and travel times.
                 <br />
@@ -104,7 +103,7 @@ function MobilityConnectivity() {
                 use of these technologies.
                 <br /> According to 5GAA, it is possible to reduce carbon emissions by 45% when V2X
                 is utilized in vehicles
-              </small>
+              </p>
             </div>
           </div>
         </div>

@@ -11,8 +11,8 @@ function Motus() {
       <section className='showcase'>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5'>
-              <span className='text-title'>Mine crypto with your car</span>
+            <div className='col-md-6 d-flex flex-column justify-content-center'>
+              <p className='text-header-showcase'>Mine crypto with your car</p>
               <div className='separator mx-auto my-4'></div>
               <p className='mt-3'>
                 Proof-of-availability is sustained through plug-and-play hardware, which are a set
@@ -22,27 +22,25 @@ function Motus() {
                 The system is designed to fit different vehicles and user configurations such as
                 4-wheelers, 2-wheelers, pedestrians, micromobility, Road-side units.
               </p>
-              {/*             <Btn href='#' text='pre-order now' className='mt-4' />
-               */}{' '}
             </div>
-            <div className='col-md-7 d-flex align-items-center'>
+            <div className='col-md-6 mt-5 mt-md-0 d-flex align-items-center'>
               <Image alt='motus' src='/motus/front.png' width={690} height={552} />
             </div>
           </div>
 
-          <div className='mt-5 pt-5'>
-            <h2 className='text-center fw-bold'>Main features</h2>
-            <div className='features'>
-              <hr className='position-absolute w-100' style={{ zIndex: '1' }} />
-
-              {motusMainFeatures.map((item, index) => (
-                <div key={index} className='features-item'>
-                  <span className={`features-item-point`}></span>
-                  <span className={`features-item${index % 2 === 0 ? '-reverse' : ''}-text`}>
+          <div className='features'>
+            <p className='text-title text-center'>Main features</p>
+            <div className='d-none d-md-block mt-5'>
+              <Image alt='features' src='/motus/features.png' width={1065} height={167} />
+            </div>
+            <div className='d-md-none tree-right mt-5 ps-5'>
+              <div className='tree-right-list'>
+                {motusMainFeatures.map((item, index) => (
+                  <span key={index} className='tree-right-list-item'>
                     {item}
                   </span>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -74,8 +72,8 @@ function Motus() {
                   <Image alt='motus' src='/motus/side.png' width={539} height={326} />
                 </div>
                 <div className='col-md-6'>
-                  <h3 className='fw-bold mb-4'>Overview</h3>
-                  <div className='tree-right ps-5'>
+                  <p className='text-title'>Overview</p>
+                  <div className='tree-right mt-5 ps-5'>
                     <div className='tree-right-list'>
                       <span className='tree-right-list-item'>
                         Receive and transfer different kinds of V2X messages through PC5
@@ -94,16 +92,16 @@ function Motus() {
                 </div>
               </div>
 
-              <div className='d-flex gap-5'>
+              <div className='d-flex flex-column flex-md-row gap-4'>
                 {motusOverview.map((item, index) => (
                   <Fragment key={index}>
                     <div>
-                      <h5 className='fw-bold mb-4'>{item.title}</h5>
+                      <p className='text-large fw-bold'>{item.title}</p>
                       <small>{item.description}</small>
                     </div>
                     {index !== motusOverview.length - 1 && (
                       <div
-                        className='my-auto'
+                        className='d-none d-md-block my-auto'
                         style={{
                           borderLeft: '3px solid #f5f6fe',
                           height: '150px',
@@ -120,7 +118,7 @@ function Motus() {
             <div className='mt-5 row'>
               <div className='col-md-3'>
                 <div>
-                  <h5 className='fw-bold text-capitalize mb-4'>core</h5>
+                  <p className='text-large fw-bold text-capitalize'>core</p>
                   <div>
                     {motusTechSpecs.core.map((spec, index) => (
                       <p key={index}>{spec}</p>
@@ -128,7 +126,7 @@ function Motus() {
                   </div>
                 </div>
                 <div className='mt-5'>
-                  <h5 className='fw-bold text-capitalize mb-4'>sensors</h5>
+                  <p className='text-large fw-bold text-capitalize'>sensors</p>
                   <div>
                     {motusTechSpecs.sensors.map((spec, index) => (
                       <p key={index}>{spec}</p>
@@ -146,9 +144,9 @@ function Motus() {
                   }}
                 />
               </div>
-              <div className='col-md-4 mx-auto'>
+              <div className='col-md-4 mt-5 mt-md-0 mx-auto'>
                 <div>
-                  <h5 className='fw-bold text-capitalize mb-4'>interfaces & connectivity</h5>
+                  <p className='text-large fw-bold text-capitalize'>interfaces & connectivity</p>
                   <div>
                     {motusTechSpecs.interfaces.map((spec, index) => (
                       <p key={index}>{spec}</p>
@@ -166,9 +164,9 @@ function Motus() {
                   }}
                 />
               </div>
-              <div className='col-md-3'>
+              <div className='col-md-3 mt-5 mt-md-0'>
                 <div>
-                  <h5 className='fw-bold text-capitalize mb-4'>power</h5>
+                  <p className='text-large fw-bold text-capitalize'>power</p>
                   <div>
                     {motusTechSpecs.power.map((spec, index) => (
                       <p key={index}>{spec}</p>
@@ -176,7 +174,7 @@ function Motus() {
                   </div>
                 </div>
                 <div className='mt-5'>
-                  <h5 className='fw-bold text-capitalize mb-4'>mechanical</h5>
+                  <p className='text-large fw-bold text-capitalize'>mechanical</p>
                   <div>
                     {motusTechSpecs.mechanical.map((spec, index) => (
                       <p key={index}>{spec}</p>

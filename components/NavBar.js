@@ -50,7 +50,7 @@ const NavBar = () => {
                   </NavDropdown.Item>
                 </div>
                 <div
-                  className='my-auto'
+                  className='my-auto d-none d-md-block'
                   style={{
                     borderLeft: '3px solid #f5f6fe',
                     height: '150px',
@@ -94,7 +94,7 @@ const NavBar = () => {
                   </NavDropdown.Item>
                 </div>
                 <div
-                  className='my-auto'
+                  className='my-auto d-none d-md-block'
                   style={{
                     borderLeft: '3px solid #f5f6fe',
                     height: '150px',

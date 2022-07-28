@@ -24,7 +24,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Open Sans' !important;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   // background: url('/background/background.jpg') no-repeat;
   // background-position: top center;
   color: #fff !important;
@@ -48,14 +50,17 @@ a {
 }
 
 .btn {
+  border-radius: 15px;
+
   &-dark {
-    background: $dark-blue;
+    background: $dark-purple;
     color: white;
     border: none;
 
     &:hover,
     &:active {
       background-color: $purple;
+      color: $dark-blue;
     }
   }
 
@@ -85,6 +90,12 @@ a {
     &-white {
       color: white;
       border-color: white;
+
+      &:hover,
+      &:active {
+        color: $dark-blue !important;
+        background-color: white;
+      }
     }
   }
 }
@@ -168,7 +179,8 @@ header {
   padding-bottom: 2rem;
 
   &-light {
-    background: transparent;
+    background: $light-gray;
+    padding-bottom: 0;
 
     * {
       color: $dark-blue !important;
@@ -177,6 +189,7 @@ header {
 
   .nav-item {
     padding: 10px;
+    font-size: 14px;
   }
 
   .show {
@@ -193,15 +206,17 @@ header {
       color: $dark-blue;
       font-weight: 700;
       text-transform: uppercase;
+      font-size: 14px;
     }
 
     &-menu {
       padding-bottom: 1rem;
       color: $dark-blue;
       border-radius: 15px 0 15px 15px;
-      border-top: none;
+      border: none;
       margin: 0;
       padding: 20px;
+      font-size: 14px;
 
       @include media-breakpoint-down(md) {
         border: none;
@@ -475,11 +490,55 @@ header {
   }
 
   &-title {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
+    line-height: 1.2;
 
     @include media-breakpoint-down(md) {
-      font-size: 28px;
+      font-size: 24px;
+    }
+
+    &-semi {
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &-medium {
+    font-size: 24px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
+  }
+
+  &-large {
+    font-size: 28px;
+    line-height: 1.2;
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
+  }
+
+  &-header {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include media-breakpoint-down(md) {
+      font-size: 32px;
+    }
+
+    &-showcase {
+      font-size: 57px;
+      font-weight: 700;
+      line-height: 1.2;
+
+      @include media-breakpoint-down(md) {
+        font-size: 38px;
+      }
     }
   }
 }

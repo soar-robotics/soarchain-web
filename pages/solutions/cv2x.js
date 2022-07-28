@@ -7,8 +7,8 @@ function Cv2x() {
       <section className='showcase'>
         <div className='container'>
           <div className='row'>
-            <div className='col-xl-6'>
-              <span className='text-title'>
+            <div className='col-lg-6'>
+              <span className='text-header'>
                 CV2-X is the solution to full autonomy and safer transportation
               </span>
               <div className='mt-5'>
@@ -17,9 +17,9 @@ function Cv2x() {
                 ))}
               </div>
             </div>
-            <div className='ms-xl-auto col-xl-5 ps-xl-5 mt-5 mt-xl-0'>
-              <div className='ps-xl-5'>
-                <h5 className='text-center text-purple text-uppercase fw-bold'>
+            <div className='ms-lg-auto col-lg-5 ps-lg-5 mt-5 mt-lg-0'>
+              <div className='ps-lg-5'>
+                <h5 className='text-center text-purple text-title-semi fw-bold'>
                   Through its instant communication V2X allows road safety applications such as
                 </h5>
                 <div className='mx-auto'>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { Btn, BtnOutline } from '../../components/Btn';
-import Tree, { TreeWave } from '../../components/Tree';
+import { TreeWave } from '../../components/Tree';
 import { userFeatures } from '../../utils/context/users';
 
 function Users() {
@@ -9,7 +9,7 @@ function Users() {
     <main id='users'>
       <section className='showcase'>
         <div className='container'>
-          <p className='text-title text-center mb-5'>
+          <p className='text-header-showcase text-center mb-5'>
             Soarchain <br /> offers users
           </p>
           <TreeWave context={userFeatures} />
@@ -19,16 +19,14 @@ function Users() {
       <section className='motus'>
         <div className='container'>
           <div className='row d-flex align-items-center justify-content-center'>
-            <div className='col col-md-6'>
-              <h5 className='text-center text-title text-uppercase fw-bold'>
-                Upgrade your <br /> car with MOTUS
-              </h5>
-              <div className='text-center mt-5'>
-                <Btn href='/solutions/motus' text='explore more' />
+            <div className='col-md-6 order-2 order-md-1 mt-5 mt-md-0'>
+              <p className='text-header text-center'>Upgrade your car with MOTUS</p>
+              <div className='text-center mt-4'>
+                <Btn dark href='/solutions/motus' text='explore more' />
               </div>
             </div>
 
-            <div className='col col-md-6'>
+            <div className='col-md-6 order-1 order-md-2'>
               <Image alt='motus' src='/motus/front.png' width={690} height={552} />
             </div>
           </div>
@@ -37,7 +35,7 @@ function Users() {
 
       <section className='applications'>
         <div className='container'>
-          <h3 className='text-center fw-bold'>Soarchain unlocks variety of applications</h3>
+          <p className='text-title'>Soarchain unlocks variety of applications</p>
           <div className='my-5 pt-5'>
             <Image alt='application' src='/fork-dark.png' width={1088} height={576} />
           </div>
