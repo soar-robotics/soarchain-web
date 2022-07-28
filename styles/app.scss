@@ -167,6 +167,14 @@ header {
   background: linear-gradient($dark-blue, rgba($dark-blue, 0.5), transparent);
   padding-bottom: 2rem;
 
+  &-light {
+    background: transparent;
+
+    * {
+      color: $dark-blue !important;
+    }
+  }
+
   .nav-item {
     padding: 10px;
   }

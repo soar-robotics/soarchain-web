@@ -1,27 +1,23 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => {
-  // const [styles, setStyles] = useState('');
+  const router = useRouter();
 
-  // if (typeof window !== 'undefined') {
-  //   const navItemWidth = document.querySelector('.show');
-
-  //   console.log(navItemWidth);
-
-  //   setStyles(`.navbar {
-  //   background: red !important;
-  // }`);
-  // }
+  const dark = router.pathname !== '/solutions/motus';
 
   return (
-    <Navbar className='navbar' variant='dark' expand='md'>
-      {/* <style>{styles}</style> */}
+    <Navbar className={`navbar ${!dark ? 'navbar-light' : ''}`} variant='dark' expand='md'>
       <Container>
         <Navbar.Brand href='/'>
-          <Image alt='soarchain' src='/logo/text-solid.png' width={216} height={68} />
+          <Image
+            alt='soarchain'
+            src={`/logo/text-solid${!dark ? '-dark' : ''}.png`}
+            width={216}
+            height={68}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
