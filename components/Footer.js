@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='container'>
       <div className='row align-items-center'>
-        <div className='col col-md-4 d-flex flex-column'>
+        <div className='col col-12 col-md-4 d-flex flex-column'>
           <div className='w-50'>
             <Link href={'/'}>
               <Image alt='soarchain' src='/logo/text-hollow.png' width={216} height={68} />
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='col col-md-4 d-flex flex-column '>
+        <div className='col col-12 col-md-4 d-flex flex-column '>
           <div className='d-flex'>
             <div className='d-flex flex-column pe-4 me-4 border-end'>
               <span className='title'>quick start</span>
@@ -40,11 +40,11 @@ const Footer = () => {
               <Link href='/solutions/motus'>MOTUS</Link>
             </div>
           </div>
-          <small className='mt-auto'>
+          <small className='mt-4 mt-md-auto'>
             Copyright © 2010-2022 Soarchain. <br /> All rights reserved.
           </small>
         </div>
-        <div className='col col-md-4 d-flex flex-column align-items-end'>
+        <div className='col col-12 col-md-4 d-flex flex-column align-items-md-end'>
           <div className='d-flex flex-column'>
             <span className='title'>subscribe to newsletter</span>
             <InputGroup className='mt-2'>
@@ -63,7 +63,7 @@ const Footer = () => {
               </Button>
             </InputGroup>
           </div>
-          <div className='mt-auto'>
+          <div className='mt-4 mt-md-auto'>
             <Link href={'https://twitter.com/soarrobotics'}>
               <Image
                 alt='soarchain-twitter'

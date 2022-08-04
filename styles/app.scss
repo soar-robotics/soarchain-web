@@ -421,6 +421,10 @@ header {
   border-top: 3px solid $purple;
   padding: 2rem 0;
 
+  @include media-breakpoint-down(md) {
+    padding: 1rem 0 0 0;
+  }
+
   .title {
     font-size: 15px;
     font-weight: 600;
