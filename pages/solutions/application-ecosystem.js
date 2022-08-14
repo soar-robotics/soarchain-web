@@ -16,7 +16,7 @@ function ApplicationEcosystem() {
               alt='applications'
               src='/pages/solutions/application-ecosystem/fork.png'
               width={1088}
-              height={536}
+              height={612}
             />
           </div>
         </div>

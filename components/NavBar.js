@@ -45,8 +45,12 @@ const NavBar = () => {
                   >
                     application ecosystem
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/solutions/lightpaper'>
-                    lightpaper <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item
+                    className='text-capitalize'
+                    href='/Soarchain_lightpaper.pdf'
+                    target='_blank'
+                  >
+                    lightpaper
                   </NavDropdown.Item>
                 </div>
                 <div
