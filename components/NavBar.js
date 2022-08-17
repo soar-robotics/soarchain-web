@@ -159,6 +159,9 @@ const NavBar = () => {
                   <NavDropdown.Item className='text-capitalize' href='/connect/about-us'>
                     About Us
                   </NavDropdown.Item>
+                  <NavDropdown.Item className='text-capitalize' href='/connect/contact'>
+                    Contact Us
+                  </NavDropdown.Item>
                   {/* <NavDropdown.Item className='text-capitalize' href='/connect/news'>
                     news
                   </NavDropdown.Item> */}
