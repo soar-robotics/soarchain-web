@@ -67,7 +67,7 @@ const Footer = () => {
             <Link href={'https://twitter.com/soarrobotics'}>
               <Image
                 alt='soarchain-twitter'
-                src='/twitter.png'
+                src='/icon/twitter.png'
                 width={32}
                 height={27}
                 className='cursor-pointer'
