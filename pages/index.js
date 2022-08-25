@@ -13,12 +13,12 @@ export default function Home() {
           <div className='container position-relative'>
             <div className='texts mx-auto position-relative pt-5'>
               <div className='text-center mt-3'>
-                <span className='text-header-showcase'>Connected Mobility of tomorrow</span>
+                <span className='text-header-showcase'>Connected Vehicles. Mobility of Future.</span>
               </div>
-              <div className='p mt-4 text-center'>
-                Soar Chain is the first blockchain protocol to deploy vehicular ad-hoc networks that
+              {/* <div className='p mt-4 text-center'>
+                Soarchain is the first blockchain protocol to deploy vehicular ad-hoc networks that
                 enable vehicle-to-everything (V2X) communication and interaction.
-              </div>
+              </div> */}
             </div>
 
             <div>

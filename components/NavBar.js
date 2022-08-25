@@ -108,10 +108,10 @@ const NavBar = () => {
                   <NavDropdown.Header>Soarchain</NavDropdown.Header>
 
                   <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
-                    soar coin <span className='text-secondary'>(coming soon)</span>
+                    Soar Mobility Token <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
-                    buy soar coin <span className='text-secondary'>(coming soon)</span>
+                    buy SRMT <span className='text-secondary'>(coming soon)</span>
                   </NavDropdown.Item>
                 </div>
               </div>
