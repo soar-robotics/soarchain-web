@@ -40,6 +40,11 @@ const Footer = () => {
               <Link href='/solutions/motus'>MOTUS</Link>
             </div>
           </div>
+          
+          <div className='mt-4 mt-md-auto'>
+            <Link href={'https://www.soarrobotics.com/'}>www.soarrobotics.com
+            </Link>
+          </div>
           <small className='mt-4 mt-md-auto'>
             Copyright © 2010-2022 Soarchain. <br /> All rights reserved.
           </small>
@@ -64,7 +69,7 @@ const Footer = () => {
             </InputGroup>
           </div>
           <div className='mt-4 mt-md-auto'>
-            <Link href={'https://twitter.com/soarrobotics'}>
+            <Link href={'https://twitter.com/soar_chain'}>
               <Image
                 alt='soarchain-twitter'
                 src='/icon/twitter.png'

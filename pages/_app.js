@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-        <title>Soar Chain</title>
+        <title>Soarchain</title>
         <link rel='shortcut icon' href='/favicon.png' />
       </Head>
       <NavBar />

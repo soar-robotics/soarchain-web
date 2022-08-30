@@ -234,19 +234,11 @@ export const motusTechSpecs = {
     '9DOF MEMS',
     'Trusted Platform Module (TPM)',
     'Hardware Security Module (HSM)',
-    'Temperature Sensor',
-    'Air Pressure Sensor',
-    'Air Quality Sensor',
-    'Humidity Sensor',
-    'RTC and Cell Battery',
   ],
 
   interfaces: [
-    '2 x USB Host',
-    'USB Serial',
     'MicroSD',
     'SIM Card',
-    '8 x GPIO',
     '4 x ADC',
     'Display Support',
     'CV2X',
@@ -255,12 +247,9 @@ export const motusTechSpecs = {
     'Wi-Fi 6 802.11 a/b/g/n/ac/ax',
     'BT 5.1',
     'CAN FD',
-    'KLine/LIN Interface*',
-    'Ethernet (10/100 Mbps)',
-    'MODBUS (RS485, RS422)',
   ],
 
-  power: ['Input Voltage Range : 12-36V', 'Battery (Li-Poly, 5000mAh+)'],
+  power: ['Input Voltage Range : 4-30V'],
 
-  mechanical: ['Dimensions : 203,12 x 84,0 x 44,53mm', 'Tamper Detection', 'IPC Certificate'],
+  mechanical: ['Dimensions : 65 x 30 x 135 (mm)'],
 };
