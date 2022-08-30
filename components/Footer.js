@@ -69,7 +69,7 @@ const Footer = () => {
             </InputGroup>
           </div>
           <div className='mt-4 mt-md-auto'>
-            <Link href={'https://twitter.com/soarrobotics'}>
+            <Link href={'https://twitter.com/soar_chain'}>
               <Image
                 alt='soarchain-twitter'
                 src='/icon/twitter.png'
