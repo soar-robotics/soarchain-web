@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button, FormControl, InputGroup } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { ArrowRight } from 'react-feather';
 
 const Footer = () => {
@@ -40,10 +40,9 @@ const Footer = () => {
               <Link href='/solutions/motus'>MOTUS</Link>
             </div>
           </div>
-          
+
           <div className='mt-4 mt-md-auto'>
-            <Link href={'https://www.soarrobotics.com/'}>www.soarrobotics.com
-            </Link>
+            <Link href={'https://www.soarrobotics.com/'}>www.soarrobotics.com</Link>
           </div>
           <small className='mt-4 mt-md-auto'>
             Copyright © 2010-2022 Soarchain. <br /> All rights reserved.
@@ -52,21 +51,20 @@ const Footer = () => {
         <div className='col col-12 col-md-4 d-flex flex-column align-items-md-end'>
           <div className='d-flex flex-column'>
             <span className='title'>subscribe to newsletter</span>
-            <InputGroup className='mt-2'>
-              <FormControl
-                className='rounded-0'
-                placeholder='Enter Your Email'
-                aria-label='email'
-                aria-describedby='newsletter-email'
-              />
+            <a
+              className='mt-2'
+              href='https://www.getdrip.com/forms/647267939/submissions/new'
+              data-drip-show-form='647267939'
+            >
               <Button
                 className='btn-dark rounded-0'
                 variant='outline-secondary'
                 id='newsletter-email'
               >
+                <small className='me-2'>Click to subscribe</small>
                 <ArrowRight size={20} />
               </Button>
-            </InputGroup>
+            </a>
           </div>
           <div className='mt-4 mt-md-auto'>
             <Link href={'https://twitter.com/soar_chain'}>
