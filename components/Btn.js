@@ -4,9 +4,9 @@ export function Btn({ href, text, dark = false, ...rest }) {
   return (
     <div {...rest}>
       <Link href={href}>
-        <a className={`btn btn-${dark ? 'dark' : 'purple'} text-uppercase py-2 px-5`}>
+        <span className={`btn btn-${dark ? 'dark' : 'purple'} text-uppercase py-2 px-5`}>
           <small>{text}</small>
-        </a>
+        </span>
       </Link>
     </div>
   );

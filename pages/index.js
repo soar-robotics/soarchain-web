@@ -11,18 +11,28 @@ export default function Home() {
       <main id='home'>
         <section className='showcase'>
           <div className='container position-relative'>
-            <div className='texts mx-auto position-relative pt-5'>
-              <div className='text-center mt-3'>
-                <span className='text-header-showcase'>Connected Vehicles. Mobility of Future.</span>
+            <div className='ms-md-4 position-relative pt-5'>
+              <div className='mt-3 w-100'>
+                <span className='text-header-showcase w-100'>
+                  Connected Vehicles. <br /> Mobility of Future.
+                </span>
+                <div className='d-flex gap-3 mt-5'>
+                  <Btn href='/solutions/motus' text='learn more' />
+
+                  <a
+                    target='_blank'
+                    href='https://shop.soarchain.com/'
+                    className='btn btn-dark text-uppercase py-2 px-5'
+                    rel='noreferrer'
+                  >
+                    <small>pre-order now</small>
+                  </a>
+                </div>
               </div>
-              {/* <div className='p mt-4 text-center'>
-                Soarchain is the first blockchain protocol to deploy vehicular ad-hoc networks that
-                enable vehicle-to-everything (V2X) communication and interaction.
-              </div> */}
             </div>
 
             <div>
-              <div className='pt-5'>
+              <div className='pt-5 mt-5'>
                 <ShowcaseSlider />
               </div>
             </div>
@@ -84,7 +94,7 @@ export default function Home() {
         <section className='motus'>
           <div className='container position-relative text-center'>
             <div className='row'>
-              <div className='col-md-6'>
+              <div className='col-md-7'>
                 <p className='text-header m-0 text-capitalize mb-3'>meet MOTUS</p>
                 <p className='mb-5 fw-bold'>
                   A plug-and-play device with state of the art C-V2X capabilities to fit different
@@ -100,11 +110,19 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <div>
+                <div className='d-flex align-items-center gap-2 justify-content-center'>
+                  <a
+                    target='_blank'
+                    href='https://shop.soarchain.com/'
+                    className='btn btn-dark text-uppercase py-2 px-5'
+                    rel='noreferrer'
+                  >
+                    <small>pre-order now</small>
+                  </a>
                   <Btn dark href='/solutions/motus' text='learn more' />
                 </div>
               </div>
-              <div className='col-md-6 mt-5 mt-md-0 d-flex align-items-center'>
+              <div className='col-md-5 mt-5 mt-md-0 d-flex align-items-center'>
                 <Image alt='motus' src='/motus/front.png' width={690} height={552} />
               </div>
             </div>

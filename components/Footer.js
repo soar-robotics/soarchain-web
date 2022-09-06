@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from 'react-bootstrap';
 import { ArrowRight } from 'react-feather';
+import { Btn } from './Btn';
 
 const Footer = () => {
   return (
@@ -57,11 +58,11 @@ const Footer = () => {
               data-drip-show-form='647267939'
             >
               <Button
-                className='btn-dark rounded-0'
+                className='btn-dark px-4 rounded-4   '
                 variant='outline-secondary'
                 id='newsletter-email'
               >
-                <small className='me-2'>Click to subscribe</small>
+                <small className='me-2 text-uppercase'>Click to subscribe</small>
                 <ArrowRight size={20} />
               </Button>
             </a>

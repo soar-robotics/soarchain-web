@@ -15,14 +15,6 @@
     padding: 5rem 0;
     color: $dark-blue;
     background-color: $light-gray;
-    background-image: url('/mobility/car.png');
-    background-position: right;
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-
-    @include media-breakpoint-down(md) {
-      background-image: none;
-    }
   }
 
   .aspects {

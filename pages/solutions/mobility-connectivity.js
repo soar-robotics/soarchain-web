@@ -19,8 +19,11 @@ function MobilityConnectivity() {
 
       <section className='softwarization'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-md-6 pe-md-5'>
+          <div className='row reverse-row'>
+            <div className='col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center'>
+              <Image alt='traffic' src='/mobility/car.png' width={1140} height={642} />
+            </div>
+            <div className='col-md-6 order-2 order-md-1 pe-md-5 mt-5 mt-md-0'>
               <p className='text-title'>Softwarization of Mobility</p>
               <div className='separator mx-auto my-4' />
               <p className='fw-bold'>
@@ -28,6 +31,8 @@ function MobilityConnectivity() {
                 a product that is mainly hardware-based to a software-centric electronic device on
                 wheels.
               </p>
+            </div>
+            <div className='col order-3 mt-md-5'>
               <p>
                 Vehicles are getting equipped with more sensors with higher levels of sophistication
                 and optimization.
@@ -37,7 +42,6 @@ function MobilityConnectivity() {
                 autonomous driving.
                 <br />
                 <br /> A group of cars in an urban environment literally forms a community.
-                <br />
                 <br /> In a well-functioning and efficient community, communication between the
                 participants is of utmost importance.
               </p>

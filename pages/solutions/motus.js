@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
+import { Btn } from '../../components/Btn';
 
 import { motusMainFeatures, motusOverview, motusTechSpecs } from '../../utils/context/motusContext';
 
@@ -22,6 +23,11 @@ function Motus() {
                 The system is designed to fit different vehicles and user configurations such as
                 4-wheelers, 2-wheelers, pedestrians, micromobility, Road-side units.
               </p>
+              <Btn dark href='https://shop.soarchain.com/' text='pre-order now' className='mt-3' />
+              <small className='text-secondary mt-2'>
+                * Only 100 MOTUS are available in the first batch. <br /> Pre-order now and start
+                mining!
+              </small>
             </div>
             <div className='col-md-6 mt-5 mt-md-0 d-flex align-items-center'>
               <Image alt='motus' src='/motus/front.png' width={690} height={552} />

@@ -21,15 +21,17 @@ export const motusUseCases = [
     title: 'Safety & Emergency',
     description: (
       <p>
-        Traffic safety & predictive collision warnings
+        Traffic safety & predictive collision warnings -
         <br />
-        Real time weather & hazard notifications
+        Real time weather & hazard notifications -
         <br />
-        Automatic emergency calls (eCall)
+        Automatic emergency calls (eCall) -
         <br />
-        Roadside assistance and medical emergencies
+        Roadside assistance and medical emergencies -
         <br />
-        Driver-assist features & skills improvement Safe city intelligence system
+        Driver-assist features & skills improvement -
+        <br />
+        Safe city intelligence system -
       </p>
     ),
   },
@@ -37,13 +39,13 @@ export const motusUseCases = [
     title: 'Artificial Intelligence',
     description: (
       <p>
-        Training data for autonomous vehicles
+        - Training data for autonomous vehicles
         <br />
-        Intelligent traffic rerouting
+        - Intelligent traffic rerouting
         <br />
-        Remote driving features
-        <br /> Behavioral assistance
-        <br /> Autonomous vehicle simulation & risk management
+        - Remote driving features
+        <br /> - Behavioral assistance
+        <br /> - Autonomous vehicle simulation & risk management
       </p>
     ),
   },
@@ -51,13 +53,13 @@ export const motusUseCases = [
     title: 'Smart City',
     description: (
       <p>
-        Traffic flow assistance
+        Traffic flow assistance -
         <br />
-        Urban planning
+        Urban planning -
         <br />
-        Parking services
-        <br /> Automated road toll collection
-        <br /> Intelligent road infrastructure
+        Parking services -
+        <br /> Automated road toll collection -
+        <br /> Intelligent road infrastructure -
       </p>
     ),
   },
@@ -65,12 +67,12 @@ export const motusUseCases = [
     title: 'Entertainment',
     description: (
       <p>
-        Audio and video content
+        - Audio and video content
         <br />
-        In-car VR and AR experiences <br />
-        Social media interaction
-        <br /> Interactive & geolocated advertising
-        <br /> Office and productivity solutions
+        - In-car VR and AR experiences <br />
+        - Social media interaction
+        <br /> - Interactive & geolocated advertising
+        <br /> - Office and productivity solutions
       </p>
     ),
   },
@@ -78,14 +80,14 @@ export const motusUseCases = [
     title: 'Insurance',
     description: (
       <p>
-        Usage-based insurance contracts
+        Usage-based insurance contracts -
         <br />
-        Pay-as-you-drive
+        Pay-as-you-drive -
         <br />
-        Pay-how-you-drive
+        Pay-how-you-drive -
         <br />
-        Intelligent insurance risk assessment
-        <br /> Vehicle usage monitoring and scoring
+        Intelligent insurance risk assessment -
+        <br /> Vehicle usage monitoring and scoring -
       </p>
     ),
   },
@@ -93,12 +95,12 @@ export const motusUseCases = [
     title: 'Manufacturers',
     description: (
       <p>
-        R&D performance improvements
+        - R&D performance improvements
         <br />
-        Data-driven design improvements
+        - Data-driven design improvements
         <br />
-        Wear and tear analytics
-        <br /> Supplier performance scorecard
+        - Wear and tear analytics
+        <br /> - Supplier performance scorecard
       </p>
     ),
   },
@@ -106,13 +108,13 @@ export const motusUseCases = [
     title: 'Advertisement',
     description: (
       <p>
-        Location-based promotion & reviews
+        Location-based promotion & reviews -
         <br />
-        On-demand services and smart virtual assistants
+        On-demand services and smart virtual assistants -
         <br />
-        Business advisory services
-        <br /> Concierge services
-        <br /> In-car offerings and targeted tailored advertising
+        Business advisory services -
+        <br /> Concierge services -
+        <br /> In-car offerings and targeted tailored advertising -
       </p>
     ),
   },
@@ -120,11 +122,10 @@ export const motusUseCases = [
     title: 'Charging / Energy',
     description: (
       <p>
-        Charging station planning and deployment
+        - Charging station planning and deployment
         <br />
-        Energy usage analysis
-        <br />
-        Charging station locator and offerings
+        - Energy usage analysis
+        <br />- Charging station locator and offerings
       </p>
     ),
   },
@@ -132,13 +133,13 @@ export const motusUseCases = [
     title: 'Logistics',
     description: (
       <p>
-        Location based delivery and offerings
+        Location based delivery and offerings -
         <br />
-        Convoy platooning
+        Convoy platooning -
         <br />
-        Efficient logistics transportation
-        <br /> Concierge services
-        <br /> In-car offerings and targeted tailored advertising
+        Efficient logistics transportation -
+        <br /> Concierge services -
+        <br /> In-car offerings and targeted tailored advertising -
       </p>
     ),
   },
@@ -146,13 +147,13 @@ export const motusUseCases = [
     title: 'Maintenance',
     description: (
       <p>
-        Remote diagnostics & prognosis
+        - Remote diagnostics & prognosis
         <br />
-        DIY diagnostics
+        - DIY diagnostics
         <br />
-        State safety tests
-        <br /> State emission tests
-        <br /> Predictive failure warning
+        - State safety tests
+        <br /> - State emission tests
+        <br /> - Predictive failure warning
       </p>
     ),
   },
@@ -160,12 +161,12 @@ export const motusUseCases = [
     title: 'Fleet Management',
     description: (
       <p>
-        GPS vehicle tracking
+        GPS vehicle tracking -
         <br />
-        Driver safety
+        Driver safety -
         <br />
-        Operational efficiency
-        <br /> Intelligent navigation
+        Operational efficiency -
+        <br /> Intelligent navigation -
       </p>
     ),
   },
@@ -173,11 +174,10 @@ export const motusUseCases = [
     title: 'Mobility Services',
     description: (
       <p>
-        Ride-sharing services
+        - Ride-sharing services
         <br />
-        Car pooling
-        <br />
-        Ride-hailing services
+        - Car pooling
+        <br />- Ride-hailing services
       </p>
     ),
   },
@@ -230,11 +230,7 @@ export const motusOverview = [
 export const motusTechSpecs = {
   core: ['1.8GHz 4-Core ARM Processor', '4 GB LPDDR4', '128 GB eMMC'],
 
-  sensors: [
-    '9DOF MEMS',
-    'Trusted Platform Module (TPM)',
-    'Hardware Security Module (HSM)',
-  ],
+  sensors: ['9DOF MEMS', 'Trusted Platform Module (TPM)', 'Hardware Security Module (HSM)'],
 
   interfaces: [
     'MicroSD',
