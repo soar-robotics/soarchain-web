@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, NavLink } from 'react-bootstrap';
 
 const NavBar = () => {
   const router = useRouter();
@@ -30,20 +31,20 @@ const NavBar = () => {
               <div className='d-md-flex gap-3 pe-3'>
                 <div>
                   <NavDropdown.Header>Industries</NavDropdown.Header>
-                  <NavDropdown.Item
-                    className='text-capitalize'
-                    href='/solutions/mobility-connectivity'
-                  >
-                    mobility and connectivity
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/solutions/mobility-connectivity'>
+                      <span className='d-block'>mobility and connectivity </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-uppercase' href='/solutions/cv2x'>
-                    cv2x
+                  <NavDropdown.Item className='text-uppercase'>
+                    <Link href='/solutions/cv2x'>
+                      <span className='d-block'>cv2x</span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className='text-capitalize'
-                    href='/solutions/application-ecosystem'
-                  >
-                    application ecosystem
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/solutions/application-ecosystem'>
+                      <span className='d-block'>application ecosystem </span>
+                    </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className='text-capitalize'
@@ -63,14 +64,22 @@ const NavBar = () => {
                 <div>
                   <NavDropdown.Header>Products</NavDropdown.Header>
 
-                  <NavDropdown.Item className='text-capitalize' href='/solutions/soarchain'>
-                    soarchain
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/solutions/soarchain'>
+                      <span className='d-block'>soarchain </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-uppercase' href='/solutions/motus'>
-                    motus
+                  <NavDropdown.Item className='text-uppercase'>
+                    <Link href='/solutions/motus'>
+                      <span className='d-block'>motus </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/solutions/roadmap'>
-                    roadmap <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item className='text-capitalize' disabled>
+                    <Link href='/solutions/roadmap'>
+                      <span className='d-block'>
+                        roadmap <span className='text-secondary'>(coming soon)</span>
+                      </span>
+                    </Link>
                   </NavDropdown.Item>
                 </div>
               </div>
@@ -84,17 +93,27 @@ const NavBar = () => {
                 <div>
                   <NavDropdown.Header>Quick Start</NavDropdown.Header>
 
-                  <NavDropdown.Item className='text-capitalize' href='/explore/users'>
-                    users
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/explore/users'>
+                      <span className='d-block'>users </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/explore/developers'>
-                    Developers <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item className='text-capitalize' disabled>
+                    <Link href='/explore/developers'>
+                      <span className='d-block'>
+                        Developers <span className='text-secondary'>(coming soon)</span>
+                      </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/explore/business'>
-                    Business
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/explore/business'>
+                      <span className='d-block'>Business </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/explore/investors'>
-                    Investors
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/explore/investors'>
+                      <span className='d-block'>Investors </span>
+                    </Link>
                   </NavDropdown.Item>
                 </div>
                 <div
@@ -107,11 +126,19 @@ const NavBar = () => {
                 <div>
                   <NavDropdown.Header>Soarchain</NavDropdown.Header>
 
-                  <NavDropdown.Item className='text-capitalize' href='/explore/srx'>
-                    Soar Mobility Token <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item className='text-capitalize' disabled>
+                    <Link href='/explore/srx'>
+                      <span className='d-block'>
+                        Soar Mobility Token <span className='text-secondary'>(coming soon)</span>
+                      </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/explore/buy-srx'>
-                    buy SRMT <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item className='text-capitalize' disabled>
+                    <Link href='/explore/buy-srx'>
+                      <span className='d-block'>
+                        buy SRMT <span className='text-secondary'>(coming soon)</span>
+                      </span>
+                    </Link>
                   </NavDropdown.Item>
                 </div>
               </div>
@@ -127,11 +154,19 @@ const NavBar = () => {
                 <div className='w-100'>
                   {/* <NavDropdown.Header>Connect</NavDropdown.Header> */}
 
-                  <NavDropdown.Item className='text-capitalize' href='/develop/consensus'>
-                    proof-of-availability <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item className='text-capitalize' disabled>
+                    <Link href='/develop/consensus'>
+                      <span className='d-block'>
+                        proof-of-availability <span className='text-secondary'>(coming soon)</span>
+                      </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/connect/become-validator'>
-                    become a validator <span className='text-secondary'>(coming soon)</span>
+                  <NavDropdown.Item className='text-capitalize' disabled>
+                    <Link href='/connect/become-validator'>
+                      <span className='d-block'>
+                        become a validator <span className='text-secondary'>(coming soon)</span>
+                      </span>
+                    </Link>
                   </NavDropdown.Item>
                 </div>
               </div>
@@ -156,11 +191,15 @@ const NavBar = () => {
                   <NavDropdown.Item className='text-capitalize' href='/connect/business'>
                     socials
                   </NavDropdown.Item>  */}
-                  <NavDropdown.Item className='text-capitalize' href='/connect/about-us'>
-                    About Us
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/connect/about-us'>
+                      <span className='d-block'>About Us </span>
+                    </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' href='/connect/contact'>
-                    Contact Us
+                  <NavDropdown.Item className='text-capitalize'>
+                    <Link href='/connect/contact'>
+                      <span className='d-block'>Contact Us </span>
+                    </Link>
                   </NavDropdown.Item>
                   {/* <NavDropdown.Item className='text-capitalize' href='/connect/news'>
                     news
