@@ -1,8 +1,26 @@
 #home {
   .showcase {
-    padding: 10rem 0;
-    background: url('/background/background.jpg') no-repeat;
-    background-position: center;
+    background: url('/background/background.jpg') no-repeat center/cover;
+    padding-bottom: 10rem;
+    position: relative;
+    top: 0;
+    min-height: 100vh;
+
+    &-vh-100 {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include media-breakpoint-down(md) {
+        align-items: center;
+        text-align: center;
+      }
+
+      .text-header-showcase {
+        line-height: 1.7;
+      }
+    }
 
     &-graphics {
       width: 900px;

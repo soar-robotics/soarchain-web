@@ -11,8 +11,8 @@ export default function Home() {
       <main id='home'>
         <section className='showcase'>
           <div className='container position-relative'>
-            <div className='ms-md-4 position-relative pt-5'>
-              <div className='mt-3 w-100'>
+            <div className='ms-md-4 position-relative'>
+              <div className='showcase-vh-100'>
                 <span className='text-header-showcase w-100'>
                   Connected Vehicles. <br /> Mobility of Future.
                 </span>
@@ -32,9 +32,7 @@ export default function Home() {
             </div>
 
             <div>
-              <div className='pt-5 mt-5'>
-                <ShowcaseSlider />
-              </div>
+              <ShowcaseSlider />
             </div>
 
             <div className='d-flex flex-column flex-md-row gap-5 w-75 mx-auto align-items-baseline mt-5'>

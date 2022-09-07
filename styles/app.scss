@@ -56,6 +56,10 @@ a {
 .btn {
   border-radius: 15px;
 
+  @include media-breakpoint-down(md) {
+    padding: 0.5rem 1rem !important;
+  }
+
   &-dark {
     background: $dark-purple;
     color: white;
