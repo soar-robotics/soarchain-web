@@ -1,0 +1,83 @@
+#roadmap {
+  .showcase {
+    padding: 10rem 0 5rem 0;
+    background: url('/background/background-9.png') no-repeat center/cover;
+    position: relative;
+
+    .container {
+      position: relative;
+      z-index: 5;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      background: rgba($color: #000000, $alpha: 0.3);
+      z-index: 1;
+    }
+  }
+
+  .roadmap-tree {
+    border-top: 3px solid rgba($color: $purple, $alpha: 0.3);
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(xxl) {
+      flex-direction: column;
+      border-top: none;
+      border-left: 3px solid rgba($color: $purple, $alpha: 0.3);
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      top: -15px;
+      position: relative;
+      padding-right: 1rem;
+      font-size: 0.8rem;
+
+      @include media-breakpoint-down(xxl) {
+        top: 0;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      &-year {
+        width: 75px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $dark-purple;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 1rem;
+
+        @include media-breakpoint-down(xxl) {
+          margin-left: -5px;
+        }
+      }
+
+      &-month {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 26px;
+
+        @include media-breakpoint-down(xxl) {
+          margin-left: 2rem;
+        }
+      }
+
+      .tree-right-list {
+        @include media-breakpoint-down(xxl) {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}

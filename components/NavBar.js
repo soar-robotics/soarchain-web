@@ -74,11 +74,9 @@ const NavBar = () => {
                       <span className='d-block'>motus </span>
                     </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className='text-capitalize' disabled>
+                  <NavDropdown.Item className='text-capitalize' x>
                     <Link href='/solutions/roadmap'>
-                      <span className='d-block'>
-                        roadmap <span className='text-secondary'>(coming soon)</span>
-                      </span>
+                      <span className='d-block'>roadmap</span>
                     </Link>
                   </NavDropdown.Item>
                 </div>
