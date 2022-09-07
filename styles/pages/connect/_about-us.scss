@@ -1,0 +1,72 @@
+#about-us {
+  .showcase {
+    background: url('/background/background-8.png') no-repeat center/cover;
+    padding: 12rem 0;
+  }
+
+  .ecosystem {
+    background: linear-gradient(to right, #bc1a8a, $dark-purple);
+    z-index: 2;
+    position: relative;
+  }
+
+  .partners {
+    color: $dark-blue;
+    padding: 5rem 0;
+  }
+
+  .team {
+    padding: 5rem 0;
+    background: $light-gray;
+    color: $dark-blue;
+
+    &-members {
+      display: flex;
+      margin: 0;
+
+      &-left {
+        padding: 1rem 2rem 1rem 0;
+
+        @include media-breakpoint-down(md) {
+          padding: 0;
+        }
+      }
+      &-right {
+        padding: 1rem 0 1rem 2rem;
+
+        @include media-breakpoint-down(md) {
+          padding: 0;
+        }
+      }
+      &-center {
+        padding: 1rem 2rem;
+        border-right: 5px solid $dark-purple;
+        border-left: 5px solid $dark-purple;
+
+        @include media-breakpoint-down(md) {
+          border: none;
+          padding: 2rem 0;
+        }
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        height: 75px;
+
+        @include media-breakpoint-down(md) {
+          height: auto;
+          margin-bottom: 0.5rem;
+        }
+
+        &-name {
+          font-weight: 700;
+        }
+
+        &-title {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

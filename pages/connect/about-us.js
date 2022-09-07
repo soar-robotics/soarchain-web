@@ -1,10 +1,11 @@
 import Image from 'next/image';
 
 import { solutionsList } from '../../utils/context/investors';
+import { teamMembers } from '../../utils/context/team';
 
-function Investors() {
+function AboutUs() {
   return (
-    <main id='investors'>
+    <main id='about-us'>
       <section className='showcase'>
         <div className='container text-center'>
           <span className='text-header-showcase'>Building the Connected Mobility Together</span>
@@ -37,8 +38,55 @@ function Investors() {
           </div>
         </div>
       </section>
+
+      <div className='team'>
+        <div className='container'>
+          <p className='text-title text-center'>Team</p>
+          <p className='text-center'>Meet the Soar Robotics team</p>
+          <div className='row team-members mt-5'>
+            <div className='col-md-4 team-members-left'>
+              {teamMembers.map((item, index) => {
+                return (
+                  index < 6 && (
+                    <div className='team-members-item'>
+                      <span className='team-members-item-name'>{item.name}</span>
+                      <span className='team-members-item-title'>{item.title}</span>
+                    </div>
+                  )
+                );
+              })}
+            </div>
+            <div className='col-md-4 team-members-center'>
+              {teamMembers.map((item, index) => {
+                return (
+                  index >= 6 &&
+                  index < 12 && (
+                    <div className='team-members-item'>
+                      <span className='team-members-item-name'>{item.name}</span>
+                      <span className='team-members-item-title'>{item.title}</span>
+                    </div>
+                  )
+                );
+              })}
+            </div>
+            <div className='col-md-4 team-members-right'>
+              {teamMembers.map((item, index) => {
+                return (
+                  index >= 12 &&
+                  index < 18 && (
+                    <div className='team-members-item'>
+                      <span className='team-members-item-name'>{item.name}</span>
+                      <span className='team-members-item-title'>{item.title}</span>
+                    </div>
+                  )
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
 
-export default Investors;
+export default AboutUs;
